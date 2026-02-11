@@ -8,6 +8,7 @@ import {
   slides,
   solutionSector,
   testimonial,
+  otherproduct,
 } from "@/data";
 import {
   Clock,
@@ -23,6 +24,10 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const Home = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -71,7 +76,7 @@ const Home = () => {
       </AnimatePresence>
 
       {/* hero carousel */}
-      <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
+      <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-hidden">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
@@ -133,12 +138,12 @@ const Home = () => {
       </section>
 
       {/* second section  */}
-      <section className="py-5 px-2 md:px-10 lg:px-20 md:py-10 lg:py-20">
-        <h2 className="text-center font-bold text-2xl md:text-4xl lg:px-40 font-teko">
+      <section className="py-5 blueprint-bg bg-white px-2 md:px-10 lg:px-20 md:py-10 lg:py-20">
+        <h2 className="text-center font-bold text-2xl md:text-[45px]  font-teko text-black">
           Your Trusted Sharp Container & Needle Destroyer Manufacturer Since
           1988
         </h2>
-        <p className="py-3 text-justify">
+        <p className="py-3 text-justify text-black text-lg">
           Established in 1988,{" "}
           <strong>Sangam Plastic Industries Pvt Ltd</strong> has been a trusted
           Sharp Container Manufacturer and Needle Destroyer Manufacturer,
@@ -148,7 +153,7 @@ const Home = () => {
           producing durable, safe, and regulation-compliant products designed to
           ensure secure disposal of medical sharps and needles.
         </p>
-        <p className="py-3 text-justify ">
+        <p className="py-3 text-justify text-black text-lg">
           Based in Delhi, India, our advanced manufacturing facility is equipped
           with modern machinery and quality control systems that enable us to
           meet large-scale production requirements while maintaining strict
@@ -157,7 +162,7 @@ const Home = () => {
           institutional clients by consistently delivering products that are
           reliable, hygienic, cost-effective, and built for long-term use.
         </p>
-        <p className="py-3 text-justify ">
+        <p className="py-3 text-justify text-black text-lg">
           Driven by innovation and guided by strong leadership, our experienced
           team remains committed to enhancing healthcare safety through
           continuous improvement, product development, and customer-focused
@@ -166,14 +171,12 @@ const Home = () => {
       </section>
 
       {/* product section  */}
-      <section className="py-5 px-2 md:px-10 lg:px-20">
-        <p className="font-bold text-center  text-2xl md:text-4xl font-teko">
-          Our Products
-        </p>
-        <p className="font-medium text-lg text-center pb-2">
+      <section className="py-10 px-2 md:px-10 lg:px-20">
+       
+        <p className="font-bold text-3xl text-center py-6">
           Reliable Biomedical Waste Management Solutions
         </p>
-        <p className="text-center">
+        <p className="text-center text-lg pb  -4">
           At{" "}
           <strong className="capitalize">
             Sangam plastic industries Pvt Ltd
@@ -189,18 +192,18 @@ const Home = () => {
               className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
               key={id}
             >
-              <div className="relative h-64 w-full  overflow-hidden">
+              <div className="relative h-83 w-full  overflow-hidden">
                 <Image
                   src={image}
                   alt={title}
                   width={1000}
                   height={1000}
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 p-5"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 "
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 ">{title}</h3>
-                <p className="py-3">{desc}</p>
+                <h3 className="text-2xl capitalize text-center font-bold text-gray-900 ">{title}</h3>
+                <p className="py-3 text-black text-center">{desc}</p>
                 <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
                   View Details
                 </button>
@@ -221,7 +224,7 @@ const Home = () => {
             className=" w-full h-auto"
           />
           <div className="bg-white absolute bottom-0 w-60 px-4 py-3 md:w-105 md:px-8 md:py-10">
-            <p className="text-lg md:text-2xl">Designed for Safety & Hygiene</p>
+            <p className="text-lg text-black md:text-2xl">Designed for Safety & Hygiene</p>
             <p className="text-sm font-medium text-gray-500 md:text-lg">
               We prioritize infection control and workplace safety by designing
               products that help prevent needle-stick injuries.
@@ -237,7 +240,7 @@ const Home = () => {
             <p className="font-bold text-white text-3xl md:text-4xl mb-3 font-teko">
               Pharmaceutical Companies
             </p>
-            <p className="text-white font-medium pr-2 pl-2 md:p-0">
+            <p className="text-white text-2xl font-medium pr-2 pl-2 md:p-0">
               Our waste management products help pharmaceutical companies
               maintain clean
             </p>
@@ -273,7 +276,7 @@ const Home = () => {
             </div>
           </div>
 
-          <p className="mt-4 font-semibold text-white md:pb-5">
+          <p className="mt-4  text-xl font-semibold text-white md:pb-5">
             Our sharp containers are suitable for hospitals, clinics,
             laboratories, and healthcare facilities, ensuring safe biomedical
             waste handling and reduced risk of needle-stick injuries.
@@ -282,8 +285,8 @@ const Home = () => {
       </section>
 
       {/* why health leader trust  */}
-      <section className="py-10 mt-8 bg-gray-50 rounded-2xl px-2 md:px-10 lg:px-20">
-        <h3 className="text-2xl md:text-4xl font-bold text-center font-teko">
+      <section className="py-15 blueprint-bg bg-gray-50 rounded-2xl px-2 md:px-10 lg:px-20">
+        <h3 className="text-2xl md:text-5xl font-bold text-black text-center mb-10 font-teko ">
           Why Healthcare Leaders Trust Sangam Industries
         </h3>
 
@@ -293,8 +296,8 @@ const Home = () => {
               <Clock size={24} />
             </div>
             <div>
-              <p className="font-semibold">Decades of Proven Experience</p>
-              <p className="text-sm">
+              <p className="font-bold text-xl text-black">Decades of Proven Experience</p>
+              <p className="text-md text-black">
                 Since 1988, we have built a strong reputation supplying durable
                 and compliant biomedical waste solutions to hospitals, clinics,
                 and laboratories across India.
@@ -307,8 +310,8 @@ const Home = () => {
               <ShieldCheck size={24} />
             </div>
             <div>
-              <p className="font-semibold">Assured Quality Standards</p>
-              <p className="text-sm">
+              <p className="font-bold text-xl text-black">Assured Quality Standards</p>
+              <p className="text-md text-black">
                 Products are made from premium-grade materials and undergo
                 strict inspections to ensure performance, safety, and regulatory
                 compliance.
@@ -321,8 +324,8 @@ const Home = () => {
               <Factory size={24} />
             </div>
             <div>
-              <p className="font-semibold">Modern Manufacturing Capabilities</p>
-              <p className="text-sm">
+              <p className="font-bold text-xl text-black">Modern Manufacturing Capabilities</p>
+              <p className="text-md text-black">
                 Our state-of-the-art Delhi facility is equipped with advanced
                 machinery to meet bulk production demands while maintaining
                 consistent quality.
@@ -335,8 +338,8 @@ const Home = () => {
               <Stethoscope size={24} />
             </div>
             <div>
-              <p className="font-semibold">Designed for Safety & Hygiene</p>
-              <p className="text-sm">
+              <p className="font-bold text-xl text-black">Designed for Safety & Hygiene</p>
+              <p className="text-md text-black">
                 We design products to help prevent needle-stick injuries,
                 minimize contamination risks, and support hygienic waste
                 disposal.
@@ -349,8 +352,8 @@ const Home = () => {
               <SlidersHorizontal size={24} />
             </div>
             <div>
-              <p className="font-semibold">Flexible & Custom Solutions</p>
-              <p className="text-sm">
+              <p className="font-bold text-xl text-black">Flexible & Custom Solutions</p>
+              <p className="text-md text-black">
                 Available in multiple sizes, capacities, and designs — we
                 provide customized solutions tailored to healthcare
                 requirements.
@@ -358,15 +361,15 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 ">
             <div className="p-3 bg-[#0971CE] text-white rounded-lg">
               <Truck size={24} />
             </div>
-            <div>
-              <p className="font-semibold">
+            <div className="">
+              <p className="font-bold text-xl text-black">
                 Nationwide Reach & Reliable Supply
               </p>
-              <p className="text-sm">
+              <p className="text-md text-black">
                 We serve clients across India with timely delivery, dependable
                 support, and long-term service reliability.
               </p>
@@ -405,7 +408,7 @@ const Home = () => {
             </a>
           </div>
 
-          <p className="mt-6 text-sm opacity-90">
+          <p className="mt-6 text-md opacity-90">
             Supporting Multiple Sectors with Safe Waste Solutions
           </p>
         </div>
@@ -413,11 +416,11 @@ const Home = () => {
 
       {/* supporting multiple  */}
       <section className="py-5 md:py-10 px-2 md:px-10 lg:px-20">
-        <h3 className="text-2xl md:text-4xl font-bold text-center font-teko">
+        <h3 className="text-2xl md:text-5xl font-bold text-center font-teko">
           Supporting Multiple Sectors with Safe Waste Solutions
         </h3>
 
-        <p className="text-justify py-2">
+        <p className=" py-2 text-center text-md max-w-6xl my-4 mx-auto">
           At{" "}
           <strong className="capitalize">
             Sangam plastic industries Pvt. Ltd.
@@ -440,10 +443,10 @@ const Home = () => {
                 <IconComponent size={24} />
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                <h4 className="text-2xl font-bold text-black mb-2">
                   {title}
                 </h4>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-md text-black leading-relaxed">
                   {description}
                 </p>
               </div>
@@ -453,61 +456,53 @@ const Home = () => {
       </section>
 
       {/* certificates  */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-3xl md:text-5xl font-bold text-center font-teko">
-              Our Certifications
-            </h3>
-            <p className="text-center text-gray-600 mb-2 text-lg">
-              Committed to Quality and International Standards
-            </p>
-          </motion.div>
+     <section className="w-full relative bg-white py-8 sm:py-10 px-4 sm:px-6 md:px-12">
+      {/* Heading */}
+      <h2 className="font-bold  relative text-3xl sm:text-4xl md:text-5xl mb-5 sm:mb-16 text-center text-gray-900">
+        Our Certificates
+        <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 sm:w-20 md:w-24 h-1 bg-blue-600 font-teko rounded-full"></span>
+      </h2>
 
-          <div
-            className="relative overflow-hidden py-2"
-            style={{
-              maskImage:
-                "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
-            }}
-          >
-            <motion.div
-              className="flex gap-6"
-              animate={{ x: ["0%", "-100%"] }}
-              transition={{ ease: "linear", duration: 15, repeat: Infinity }}
-            >
-              {[...cirtificate, ...cirtificate].map((cert, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ y: -8 }}
-                  transition={{ duration: 0.3 }}
-                  className="shrink-0 w-48 h-56 sm:w-56 sm:h-64 md:w-64 md:h-72 lg:w-72 lg:h-80 relative"
-                >
-                  <div className="w-full h-full  rounded-2xl  shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden p-2">
-                    <div className="w-full h-full relative rounded-xl flex items-center justify-center">
-                      <Image
-                        src={cert}
-                        alt={`Certificate ${index + 1}`}
-                        fill
-                        sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, (max-width: 1024px) 256px, 288px"
-                        className="object-contain p-4 transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        speed={4000}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        slidesPerView={1.2}
+        spaceBetween={30}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 2.5 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="max-w-7xl mx-auto"
+      >
+        {cirtificate.map((src,index) => (
+          <SwiperSlide key={index}>
+            <div className="flex justify-center">
+              <div className="bg-white p-3 sm:p-4 rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
+                <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-125">
+                 <Image
+  src={src}
+  alt={`Certificate ${index + 1}`}
+  fill
+  sizes="(max-width: 768px) 100vw, 33vw"
+  className="object-contain rounded-lg"
+/>
+
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
 
       {/* A Trusted Manufacturer of Sharp  */}
-      <section className="py-3 flex flex-col gap-5 md:gap-8 lg:flex-row lg:items-center px-2 md:px-10 lg:px-20 bg-[#37a2ff17] lg:py-10">
+      <section className="py-3 flex flex-col gap-5 md:gap-8 lg:flex-row lg:items-center px-2 md:px-10 lg:px-10 bg-[#37a2ff17] lg:py-10">
         <div className="lg:w-1/2">
           <Image
             src={
@@ -564,7 +559,7 @@ const Home = () => {
 
       {/* product section  */}
       <section className="py-5 px-2 md:px-10 lg:px-20 ">
-        <p className="font-bold text-center  text-2xl md:text-4xl font-teko">
+        <p className="font-bold text-center  text-2xl md:text-5xl capitalize my-5 font-teko">
           Our other Products
         </p>
         {/* <p className="font-medium text-lg text-center pb-2">
@@ -581,23 +576,23 @@ const Home = () => {
         </p> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  mt-6">
-          {homeProductData.map(({ id, image, title, desc }) => (
+          {otherproduct.map(({ id, image, title, desc }) => (
             <div
               className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
               key={id}
             >
-              <div className="relative h-64 w-full  overflow-hidden">
+              <div className="relative h-85  w-full  overflow-hidden">
                 <Image
                   src={image}
                   alt={title}
                   width={1000}
                   height={1000}
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 p-5"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 "
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 ">{title}</h3>
-                <p className="py-3">{desc}</p>
+                <h3 className="text-xl text-center font-bold text-gray-900 capitalize">{title}</h3>
+                <p className="py-3 text-black text-center">{desc}</p>
                 <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
                   View Details
                 </button>
@@ -693,10 +688,10 @@ const Home = () => {
 
       {/* query form  */}
       <section className="py-10 mt-8 bg-gray-50">
-        <h3 className="text-2xl md:text-4xl font-bold mb-2 text-center font-teko">
+        <h3 className="text-2xl md:text-4xl font-bold text-black mb-2 text-center font-teko">
           Request a Quote or Product Catalog Today!
         </h3>
-        <p className="text-gray-600 mb-6 text-center">
+        <p className="text-gray-900 mb-6 text-center">
           Fill out the form below and our team will get back to you shortly
         </p>
         <div className="flex flex-col md:flex-row gap-8 md:items-center px-2 md:px-10 lg:px-20">

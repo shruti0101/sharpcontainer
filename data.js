@@ -21,28 +21,59 @@ export const homeProductData = [
   {
     id: 1,
     image: "/image/sharp-container/1.5 Ltr (1)-Photoroom.webp",
-    title: "1.5 Ltr container",
+    title: "1.5 Ltr container ",
     desc: "Compact puncture-proof 1.5L sharp container designed for safe biomedical waste disposal",
   },
   {
     id: 2,
     image: "/image/sharp-container/10 Ltr (1)-Photoroom.webp",
-    title: "10 Ltr container",
+    title: " 10 Ltr container ",
     desc: "Heavy-duty puncture-proof 10L sharp container for safe biomedical waste disposal",
   },
   {
     id: 3,
     image: "/image/sharp-container/25 Ltr-Photoroom.webp",
-    title: "35 Ltr container",
-    desc: "Durable puncture-proof 25L sharp container for safe and compliant biomedical waste disposal",
+    title: "35 Ltr container ",
+    desc: "Durable puncture-proof 35L sharp container for safe and compliant biomedical waste disposal",
   },
   {
     id: 4,
     image: "/image/sharp-container/6Ltr (2)-Photoroom.webp",
-    title: "6 Ltr container",
+    title: "6 Ltr container ",
     desc: "Heavy-duty puncture-proof 6L sharp container for safe biomedical waste disposal",
   },
 ];
+
+
+
+export const otherproduct = [
+  {
+    id: 1,
+    image: "/other/Plastic-Dustbin.webp",
+    title: "plastic dustbin",
+    desc: "Sturdy and lightweight plastic dustbin suitable for everyday waste disposal and easy cleaning.",
+  },
+  {
+    id: 2,
+    image: "/other/wringel.webp",
+    title: "wringer trolley",
+    desc: "Durable wringer trolley designed for efficient mopping and easy mobility in commercial and residential spaces.",
+  },
+  {
+    id: 3,
+    image: "/other/Garbage-Bag.webp",
+    title: "garbage bag",
+    desc: "Strong and leak-resistant garbage bag ideal for handling household or commercial waste safely.",
+  },
+  {
+    id: 4,
+    image: "/other/palletnew.jpeg",
+    title: "pallets",
+    desc: "Heavy-duty pallets for storing and transporting goods securely in warehouses or industrial settings.",
+  },
+];
+
+
 
 export const faqs = [
   {
@@ -180,6 +211,19 @@ export const testimonial = [
 ];
 
 export const slides = [
+
+
+ {
+    image: "/image/home/banner2.webp",
+    title: "Sharp Container Manufacturer",
+    subtitle:
+      "Hygienic, puncture-resistant containers for safe sharps disposal.",
+    ctaPrimary: { href: "/product", label: "See Solutions" },
+    ctaSecondary: { href: "/contact", label: "Request Quote" },
+  },
+
+
+
   {
     image: "/image/home/banner3.webp",
     title: "Safe Sharps Disposal Starts Here",
@@ -194,14 +238,7 @@ export const slides = [
     ctaPrimary: { href: "/product", label: "Our Products" },
     ctaSecondary: { href: "/contact", label: "Contact Us" },
   },
-  {
-    image: "/image/home/banner2.webp",
-    title: "Sharp Container Manufacturer",
-    subtitle:
-      "Hygienic, puncture-resistant containers for safe sharps disposal.",
-    ctaPrimary: { href: "/product", label: "See Solutions" },
-    ctaSecondary: { href: "/contact", label: "Request Quote" },
-  },
+ 
 
   {
     image: "/image/home/banner4.jpg",
@@ -282,3 +319,7 @@ export const product = [
     
   }
 ];
+
+
+
+

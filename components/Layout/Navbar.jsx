@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-[#0971CE] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-25">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -43,7 +43,7 @@ const Navbar = () => {
               height={1000}
               alt="logo"
               src={"/image/nav/logo.webp"}
-              className="h-10 w-auto"
+              className="h-20 w-auto"
             />
             <p className="text-white text-[12px] font-semibold">
               Sangam Plastic Industries Pvt. Ltd.
@@ -64,7 +64,7 @@ const Navbar = () => {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-gray-100 font-medium transition-colors duration-200 hover:font-light flex items-center gap-1"
+                  className="text-white font-bold text-xl  transform  transition-duration-200 hover:font-light flex items-center gap-1"
                 >
                   {item.label}
                   {item.submenu && (
