@@ -314,11 +314,7 @@ export const cirtificate = [
   "/image/home/cirtificates/11.webp",
 ];
 
-export const product = [
-  {
-    
-  }
-];
+
 
 
 
