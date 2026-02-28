@@ -1359,7 +1359,7 @@ export const category = [
         ],
 
         image: {
-          src: "/image/sharp-container-product/puncture-proof-sharp-container.webp",
+          src: "/image/sharp-container-product/6 Litre Waste Sharps Container.webp",
           alt: "Puncture-Proof Box Container ECO 7.5 LT",
         },
       },
