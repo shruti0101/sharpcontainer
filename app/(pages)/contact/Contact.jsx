@@ -3,54 +3,60 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
+import axios from "axios";
+import { homeProductData } from "@/data";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
-    subject: "",
+    organizationName: "",
+    productName: "",
+    quantity: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
+  async function handleFormSubmit(e) {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-    setTimeout(() => setSubmitted(false), 4000);
-  };
 
+    try {
+      const res = await axios.post("/api/form/create", formData);
+
+      if (res.status === 200 || res.status === 201) {
+        setFormSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          organizationName: "",
+          productName: "",
+          quantity: "",
+          message: "",
+        });
+        setTimeout(() => setFormSubmitted(false), 4000);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <div>
-      {/* Success Message */}
-      {submitted && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          className="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50"
-        >
-          ✓ Message sent successfully! We'll get back to you soon.
-        </motion.div>
-      )}
+      {/* success message  */}
+      <AnimatePresence>
+        {formSubmitted && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50"
+          >
+            ✓ Quote request submitted successfully!
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden bg-gradient-to-r from-[#0971CE] to-[#2e86f9] flex items-center justify-center">
@@ -89,8 +95,9 @@ const Contact = () => {
               </div>
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-600">info@sangamplastic.com</p>
-            <p className="text-gray-600">support@sangamplastic.com</p>
+            <a href="mailto:info@polywell.co.in" className="text-gray-600">
+              info@polywell.co.in
+            </a>
           </motion.div>
 
           {/* Phone Card */}
@@ -106,8 +113,7 @@ const Contact = () => {
               </div>
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-            <p className="text-gray-600">+91 (11) 4567-8900</p>
-            <p className="text-gray-600">+91 9876-543-210</p>
+            <a href="tel:+919810026034">+91 98100 26034</a>
           </motion.div>
 
           {/* Address Card */}
@@ -125,8 +131,10 @@ const Contact = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Address
             </h3>
-            <p className="text-gray-600">Sangam Plastic Industries Pvt Ltd</p>
-            <p className="text-gray-600 text-sm">Delhi, India</p>
+            <p className="text-gray-600">
+              110, Satya Bhawan, 36 Community Center, Wazirpur Industrial Area,
+              New Delhi-110052
+            </p>
           </motion.div>
         </div>
       </section>
@@ -144,116 +152,150 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Form */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
+            <form
+              onSubmit={handleFormSubmit}
+              className="space-y-4 bg-white p-8 rounded-2xl shadow-2xl"
             >
-              <form
-                onSubmit={handleSubmit}
-                className="bg-white p-8 rounded-xl shadow-lg"
-              >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0971CE] transition"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0971CE] transition"
-                      placeholder="Doe"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0971CE] transition"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-900 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0971CE] transition"
-                      placeholder="+91 XXXXX XXXXX"
-                    />
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <label className="block text-sm font-medium text-gray-900 mb-2">
-                    Subject
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Full Name */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
+                    Full Name
                   </label>
                   <input
                     type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0971CE] transition"
-                    placeholder="What is this about?"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
+                    placeholder="Your name"
                   />
                 </div>
 
-                <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-900 mb-2">
-                    Message
+                {/* Email Address */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
+                    Email Address
                   </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
+                  <input
+                    type="email"
                     required
-                    rows="5"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0971CE] transition resize-none"
-                    placeholder="Tell us how we can help..."
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
+                    placeholder="your@email.com"
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-lg font-semibold hover:bg-[#145ec0] transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2"
-                >
-                  <Send size={20} />
-                  Send Message
-                </button>
-              </form>
-            </motion.div>
+                {/* Phone Number */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    required
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
+                    placeholder="+91 XXXXX XXXXX"
+                  />
+                </div>
+
+                {/* Organization / Hospital Name */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
+                    Organization / Hospital Name
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.organizationName}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        organizationName: e.target.value,
+                      })
+                    }
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
+                    placeholder="Hospital or clinic name"
+                  />
+                </div>
+
+                {/* Product Interest Dropdown */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
+                    Product Interest
+                  </label>
+                  <select
+                    required
+                    value={formData.productName}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        productName: e.target.value,
+                      })
+                    }
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
+                  >
+                    <option value="">Select a product</option>
+                    {homeProductData.map(({ id, title }) => (
+                      <option key={id} value={title}>
+                        {title}
+                      </option>
+                    ))}
+                    <option value="all">All Products</option>
+                  </select>
+                </div>
+
+                {/* Quantity / Requirement */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
+                    Quantity / Requirement
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.quantity}
+                    onChange={(e) =>
+                      setFormData({ ...formData, quantity: e.target.value })
+                    }
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
+                    placeholder="e.g., 100 units per month"
+                  />
+                </div>
+              </div>
+
+              {/* Message / Special Instructions */}
+              <div>
+                <label className="block text-sm font-medium text-gray-900 mb-1">
+                  Message / Special Instructions
+                </label>
+                <textarea
+                  value={formData.message}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
+                  rows="4"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition resize-none"
+                  placeholder="Tell us about your requirements..."
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-semibold hover:bg-[#145ec0] transition-colors shadow-md hover:shadow-lg"
+              >
+                Request a Quote
+              </button>
+            </form>
 
             {/* Image and Info */}
             <motion.div
@@ -308,7 +350,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-gradient-to-r from-[#0971CE] to-[#2e86f9] text-white">
+      {/* <section className="py-12 bg-gradient-to-r from-[#0971CE] to-[#2e86f9] text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-teko">
             Ready to Work With Us?
@@ -332,7 +374,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

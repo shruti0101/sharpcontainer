@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import {
   Mail,
@@ -10,10 +10,12 @@ import {
   Twitter,
   Linkedin,
   Instagram,
+  X,
 } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {
+  const [imageShow, setImageShow] = useState(false);
   const currentYear = new Date().getFullYear();
 
   const footerSections = [
@@ -27,6 +29,34 @@ const Footer = () => {
       ],
     },
   ];
+
+  if (imageShow) {
+    return (
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4"
+        onClick={() => setImageShow(false)}
+      >
+        <div
+          className="relative max-w-3xl max-h-[90vh]  p-2 rounded-lg"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            onClick={() => setImageShow(false)}
+            className="absolute -top-3 -right-3 z-10 bg-white text-black rounded-full p-1 shadow-lg"
+          >
+            <X size={24} />
+          </button>
+          <Image
+            src={"/image/cert.webp"}
+            width={800}
+            height={1100}
+            alt="TRUST-ELITE Certificate"
+            className="object-contain w-full h-full max-h-[85vh]"
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <footer className="bg-[#0971CE] text-white">
@@ -137,7 +167,14 @@ const Footer = () => {
               customers.
             </p>
 
-            <Image src={"/image/TRUST-ELITE.webp"} width={1000} height={1000} alt="TRUST-ELITE" className="h-20 lg:h-30 w-auto"/>
+            <Image
+              onClick={() => setImageShow((prev) => !prev)}
+              src={"/image/TRUST-ELITE.webp"}
+              width={1000}
+              height={1000}
+              alt="TRUST-ELITE"
+              className="h-20 lg:h-30 w-auto cursor-pointer"
+            />
           </motion.div>
         </div>
 
@@ -145,31 +182,7 @@ const Footer = () => {
         <div className="border-t border-blue-400 my-8"></div>
 
         {/* Bottom Section */}
-        <div className="">
-          {/* Social Links */}
-          {/* <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-4"
-          >
-            {socialLinks.map((social) => {
-              const Icon = social.icon;
-              return (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  whileHover={{ scale: 1.2, rotate: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="p-2 bg-blue-500/30 rounded-full hover:bg-blue-400 transition"
-                >
-                  <Icon size={20} />
-                </motion.a>
-              );
-            })}
-          </motion.div> */}
-
+        <div className="flex flex-col gap-5 md:flex-row md:justify-between">
           {/* Copyright */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -181,15 +194,25 @@ const Footer = () => {
               &copy; {currentYear} Sangam Plastic Industries Pvt. Ltd. All
               rights reserved.
             </p>
-            <div className="flex justify-center md:justify-end gap-4 mt-2">
-              <a href="/privacy" className="hover:text-blue-200 transition">
-                Privacy Policy
+          </motion.div>
+
+          {/* Copyright */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-center md:text-right text-sm text-gray-200 flex gap-2"
+          >
+            <p>
+              Website Designed By{" "}
+              <a
+                href="https://promozionebranding.com"
+                className="hover:text-blue-200 transition font-bold"
+                target="_blank"
+              >
+                Website Designing Company.
               </a>
-              <span>•</span>
-              <a href="/terms" className="hover:text-blue-200 transition">
-                Terms of Service
-              </a>
-            </div>
+            </p>
           </motion.div>
         </div>
       </div>
