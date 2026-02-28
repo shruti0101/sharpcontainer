@@ -94,7 +94,8 @@ const About = () => {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/image/sharp-container/6Ltr (2)-Photoroom.webp"
+                // src="/image/sharp-container/6Ltr (2)-Photoroom.webp"
+                src={"/image/sharp-container/IMG_9304-Photoroom.webp"}
                 alt="Healthcare Procurement"
                 width={900}
                 height={900}

@@ -170,38 +170,7 @@ const Home = () => {
       {/* pointer  */}
       <PolywellTrustStatsSection />
 
-      {/* second section  */}
-      <section className="py-5 blueprint-bg bg-white px-2 md:px-10 lg:px-20 md:py-10 lg:py-20">
-        <h2 className="text-center font-bold text-2xl md:text-[45px]  font-teko text-black">
-          Your Trusted Sharp Container & Needle Destroyer Manufacturer Since
-          1988
-        </h2>
-        <p className="py-3 text-justify text-black text-lg">
-          Established in 1988,{" "}
-          <strong>Sangam Plastic Industries Pvt Ltd</strong> has been a trusted
-          Sharp Container Manufacturer and Needle Destroyer Manufacturer,
-          delivering high-quality biomedical waste management solutions for
-          hospitals, clinics, laboratories, and healthcare institutions across
-          India. With decades of manufacturing excellence, we specialize in
-          producing durable, safe, and regulation-compliant products designed to
-          ensure secure disposal of medical sharps and needles.
-        </p>
-        <p className="py-3 text-justify text-black text-lg">
-          Based in Delhi, India, our advanced manufacturing facility is equipped
-          with modern machinery and quality control systems that enable us to
-          meet large-scale production requirements while maintaining strict
-          safety and quality standards. Over the years, we have earned the
-          confidence of healthcare providers, medical professionals, and
-          institutional clients by consistently delivering products that are
-          reliable, hygienic, cost-effective, and built for long-term use.
-        </p>
-        <p className="py-3 text-justify text-black text-lg">
-          Driven by innovation and guided by strong leadership, our experienced
-          team remains committed to enhancing healthcare safety through
-          continuous improvement, product development, and customer-focused
-          service.
-        </p>
-      </section>
+      
 
       {/* product section  */}
       <section className="py-10 px-2 md:px-10 lg:px-20">
@@ -245,6 +214,39 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* second section  */}
+      <section className="py-5 blueprint-bg bg-white px-2 md:px-10 lg:px-20 md:py-10 lg:py-20">
+        <h2 className="text-center font-bold text-2xl md:text-[45px]  font-teko text-black">
+          Your Trusted Sharp Container & Needle Destroyer Manufacturer Since
+          1988
+        </h2>
+        <p className="py-3 text-justify text-black text-lg">
+          Established in 1988,{" "}
+          <strong>Sangam Plastic Industries Pvt Ltd</strong> has been a trusted
+          Sharp Container Manufacturer and Needle Destroyer Manufacturer,
+          delivering high-quality biomedical waste management solutions for
+          hospitals, clinics, laboratories, and healthcare institutions across
+          India. With decades of manufacturing excellence, we specialize in
+          producing durable, safe, and regulation-compliant products designed to
+          ensure secure disposal of medical sharps and needles.
+        </p>
+        <p className="py-3 text-justify text-black text-lg">
+          Based in Delhi, India, our advanced manufacturing facility is equipped
+          with modern machinery and quality control systems that enable us to
+          meet large-scale production requirements while maintaining strict
+          safety and quality standards. Over the years, we have earned the
+          confidence of healthcare providers, medical professionals, and
+          institutional clients by consistently delivering products that are
+          reliable, hygienic, cost-effective, and built for long-term use.
+        </p>
+        <p className="py-3 text-justify text-black text-lg">
+          Driven by innovation and guided by strong leadership, our experienced
+          team remains committed to enhancing healthcare safety through
+          continuous improvement, product development, and customer-focused
+          service.
+        </p>
       </section>
 
       {/* counter   */}

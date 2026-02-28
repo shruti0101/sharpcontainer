@@ -11,6 +11,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,41 +22,17 @@ const Footer = () => {
       links: [
         { label: "Home", href: "/" },
         { label: "About Us", href: "/about" },
-        { label: "Product", href: "/product" },
+        { label: "Product", href: "/sharp-container" },
         { label: "Contact Us", href: "/contact" },
       ],
     },
-    // {
-    //   title: "Products",
-    //   links: [
-    //     { label: "Product 1", href: "/product/1" },
-    //     { label: "Product 2", href: "/product/2" },
-    //     { label: "Product 3", href: "/product/3" },
-    //     { label: "All Products", href: "/products" },
-    //   ],
-    // },
-    {
-      title: "Support",
-      links: [
-        { label: "Privacy Policy", href: "/privacy" },
-        { label: "FAQ", href: "/faq" },
-        { label: "Terms and Conditions", href: "/term" },
-      ],
-    },
-  ];
-
-  const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
   ];
 
   return (
     <footer className="bg-[#0971CE] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -63,14 +40,28 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-teko font-semibold">
-              Sangam Plastic Industries Pvt Lvt.
-            </h3>
-            <p className="text-gray-100 text-sm">
-              Leading manufacturer of high-quality plastic containers and
-              packaging solutions.
+            <h3 className="text-2xl font-teko font-semibold">About Us</h3>
+            <p className="text-gray-100 text-lg">
+              Established in 1988, Sangam Plastic Industries Private Limited has
+              been a leading Garbage Bag Manufacturer, specializing in the
+              production of high-quality cleaning and housekeeping equipment for
+              commercial, industrial, and institutional use.
             </p>
-            <div className="space-y-3 text-sm">
+          </motion.div>
+
+          {/* contact Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-4"
+          >
+            <h3 className="text-2xl font-teko font-semibold">Contact Us</h3>
+            <p className="text-gray-100 text-lg">
+              Address - 110, Satya Bhawan, 36 Community Center, Wazirpur
+              Industrial Area, New Delhi-110052
+            </p>
+            <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
                 <Phone size={18} className="text-blue-200" />
                 <a
@@ -98,13 +89,6 @@ const Footer = () => {
                   info@polywell.co.in
                 </a>
               </div>
-              <div className="flex items-start gap-2">
-                <MapPin size={18} className="text-blue-200 mt-0.5" />
-                <span>
-                  110, Satya Bhawan, 36 Community Center, Wazirpur Industrial
-                  Area, New Delhi-110052
-                </span>
-              </div>
             </div>
           </motion.div>
 
@@ -125,7 +109,7 @@ const Footer = () => {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-gray-100 hover:text-blue-200 transition duration-200 text-sm"
+                      className="text-gray-100 hover:text-blue-200 transition duration-200 text-lg"
                     >
                       {link.label}
                     </a>
@@ -134,6 +118,27 @@ const Footer = () => {
               </ul>
             </motion.div>
           ))}
+
+          {/* Company Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-4"
+          >
+            <h3 className="text-2xl font-teko font-semibold">
+              Trust Elite Certificate
+            </h3>
+            <p className="text-gray-100 text-lg">
+              We are proud to present the TrustElite Certificate of Excellence
+              to Sangam Plastic Industries Pvt. Ltd., recognizing their
+              commitment to exceptional customer service, outstanding business
+              practices, and a dedication to building trust with their
+              customers.
+            </p>
+
+            <Image src={"/image/TRUST-ELITE.webp"} width={1000} height={1000} alt="TRUST-ELITE" className="h-20 lg:h-30 w-auto"/>
+          </motion.div>
         </div>
 
         {/* Divider */}
