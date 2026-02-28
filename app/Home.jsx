@@ -28,15 +28,16 @@ import { AnimatePresence, motion } from "motion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import axios from "axios";
 
 const Home = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
     phone: "",
-    organization: "",
-    productInterest: "",
+    organizationName: "",
+    productName: "",
     quantity: "",
     message: "",
   });
@@ -58,6 +59,33 @@ const Home = () => {
   const goPrev = () =>
     setCurrent((c) => (c - 1 + slides.length) % slides.length);
   const goNext = () => setCurrent((c) => (c + 1) % slides.length);
+
+  async function handleFormSubmit(e) {
+    e.preventDefault();
+
+    try {
+      const res = await axios.post(
+        "/api/form/create",
+        formData
+      );
+
+      if (res.status === 200 || res.status === 201) {
+        setFormSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          organizationName: "",
+          productName: "",
+          quantity: "",
+          message: "",
+        });
+        setTimeout(() => setFormSubmitted(false), 4000);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div className="">
@@ -172,7 +200,6 @@ const Home = () => {
 
       {/* product section  */}
       <section className="py-10 px-2 md:px-10 lg:px-20">
-       
         <p className="font-bold text-3xl text-center py-6">
           Reliable Biomedical Waste Management Solutions
         </p>
@@ -202,7 +229,9 @@ const Home = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl capitalize text-center font-bold text-gray-900 ">{title}</h3>
+                <h3 className="text-2xl capitalize text-center font-bold text-gray-900 ">
+                  {title}
+                </h3>
                 <p className="py-3 text-black text-center">{desc}</p>
                 <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
                   View Details
@@ -224,7 +253,9 @@ const Home = () => {
             className=" w-full h-auto"
           />
           <div className="bg-white absolute bottom-0 w-60 px-4 py-3 md:w-105 md:px-8 md:py-10">
-            <p className="text-lg text-black md:text-2xl">Designed for Safety & Hygiene</p>
+            <p className="text-lg text-black md:text-2xl">
+              Designed for Safety & Hygiene
+            </p>
             <p className="text-sm font-medium text-gray-500 md:text-lg">
               We prioritize infection control and workplace safety by designing
               products that help prevent needle-stick injuries.
@@ -296,7 +327,9 @@ const Home = () => {
               <Clock size={24} />
             </div>
             <div>
-              <p className="font-bold text-xl text-black">Decades of Proven Experience</p>
+              <p className="font-bold text-xl text-black">
+                Decades of Proven Experience
+              </p>
               <p className="text-md text-black">
                 Since 1988, we have built a strong reputation supplying durable
                 and compliant biomedical waste solutions to hospitals, clinics,
@@ -310,7 +343,9 @@ const Home = () => {
               <ShieldCheck size={24} />
             </div>
             <div>
-              <p className="font-bold text-xl text-black">Assured Quality Standards</p>
+              <p className="font-bold text-xl text-black">
+                Assured Quality Standards
+              </p>
               <p className="text-md text-black">
                 Products are made from premium-grade materials and undergo
                 strict inspections to ensure performance, safety, and regulatory
@@ -324,7 +359,9 @@ const Home = () => {
               <Factory size={24} />
             </div>
             <div>
-              <p className="font-bold text-xl text-black">Modern Manufacturing Capabilities</p>
+              <p className="font-bold text-xl text-black">
+                Modern Manufacturing Capabilities
+              </p>
               <p className="text-md text-black">
                 Our state-of-the-art Delhi facility is equipped with advanced
                 machinery to meet bulk production demands while maintaining
@@ -338,7 +375,9 @@ const Home = () => {
               <Stethoscope size={24} />
             </div>
             <div>
-              <p className="font-bold text-xl text-black">Designed for Safety & Hygiene</p>
+              <p className="font-bold text-xl text-black">
+                Designed for Safety & Hygiene
+              </p>
               <p className="text-md text-black">
                 We design products to help prevent needle-stick injuries,
                 minimize contamination risks, and support hygienic waste
@@ -352,7 +391,9 @@ const Home = () => {
               <SlidersHorizontal size={24} />
             </div>
             <div>
-              <p className="font-bold text-xl text-black">Flexible & Custom Solutions</p>
+              <p className="font-bold text-xl text-black">
+                Flexible & Custom Solutions
+              </p>
               <p className="text-md text-black">
                 Available in multiple sizes, capacities, and designs — we
                 provide customized solutions tailored to healthcare
@@ -443,9 +484,7 @@ const Home = () => {
                 <IconComponent size={24} />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-black mb-2">
-                  {title}
-                </h4>
+                <h4 className="text-2xl font-bold text-black mb-2">{title}</h4>
                 <p className="text-md text-black leading-relaxed">
                   {description}
                 </p>
@@ -456,50 +495,49 @@ const Home = () => {
       </section>
 
       {/* certificates  */}
-     <section className="w-full relative bg-white py-8 sm:py-10 px-4 sm:px-6 md:px-12">
-      {/* Heading */}
-      <h2 className="font-bold  relative text-3xl sm:text-4xl md:text-5xl mb-5 sm:mb-16 text-center text-gray-900">
-        Our Certificates
-        <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 sm:w-20 md:w-24 h-1 bg-blue-600 font-teko rounded-full"></span>
-      </h2>
+      <section className="w-full relative bg-white py-8 sm:py-10 px-4 sm:px-6 md:px-12">
+        {/* Heading */}
+        <h2 className="font-bold  relative text-3xl sm:text-4xl md:text-5xl mb-5 sm:mb-16 text-center text-gray-900">
+          Our Certificates
+          <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 sm:w-20 md:w-24 h-1 bg-blue-600 font-teko rounded-full"></span>
+        </h2>
 
-      <Swiper
-        modules={[Autoplay]}
-        loop={true}
-        speed={4000}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        slidesPerView={1.2}
-        spaceBetween={30}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 2.5 },
-          1024: { slidesPerView: 3 },
-        }}
-        className="max-w-7xl mx-auto"
-      >
-        {cirtificate.map((src,index) => (
-          <SwiperSlide key={index}>
-            <div className="flex justify-center">
-              <div className="bg-white p-3 sm:p-4 rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
-                <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-125">
-                 <Image
-  src={src}
-  alt={`Certificate ${index + 1}`}
-  fill
-  sizes="(max-width: 768px) 100vw, 33vw"
-  className="object-contain rounded-lg"
-/>
-
+        <Swiper
+          modules={[Autoplay]}
+          loop={true}
+          speed={4000}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          slidesPerView={1.2}
+          spaceBetween={30}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 2.5 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="max-w-7xl mx-auto"
+        >
+          {cirtificate.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex justify-center">
+                <div className="bg-white p-3 sm:p-4 rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
+                  <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-125">
+                    <Image
+                      src={src}
+                      alt={`Certificate ${index + 1}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-contain rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
 
       {/* A Trusted Manufacturer of Sharp  */}
       <section className="py-3 flex flex-col gap-5 md:gap-8 lg:flex-row lg:items-center px-2 md:px-10 lg:px-10 bg-[#37a2ff17] lg:py-10">
@@ -591,7 +629,9 @@ const Home = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl text-center font-bold text-gray-900 capitalize">{title}</h3>
+                <h3 className="text-xl text-center font-bold text-gray-900 capitalize">
+                  {title}
+                </h3>
                 <p className="py-3 text-black text-center">{desc}</p>
                 <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
                   View Details
@@ -697,20 +737,7 @@ const Home = () => {
         <div className="flex flex-col md:flex-row gap-8 md:items-center px-2 md:px-10 lg:px-20">
           <div className="md:w-1/2">
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setFormSubmitted(true);
-                setFormData({
-                  fullName: "",
-                  email: "",
-                  phone: "",
-                  organization: "",
-                  productInterest: "",
-                  quantity: "",
-                  message: "",
-                });
-                setTimeout(() => setFormSubmitted(false), 4000);
-              }}
+              onSubmit={handleFormSubmit}
               className="space-y-4 bg-white p-8 rounded-2xl shadow-2xl"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -722,9 +749,9 @@ const Home = () => {
                   <input
                     type="text"
                     required
-                    value={formData.fullName}
+                    value={formData.name}
                     onChange={(e) =>
-                      setFormData({ ...formData, fullName: e.target.value })
+                      setFormData({ ...formData, name: e.target.value })
                     }
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
                     placeholder="Your name"
@@ -773,9 +800,12 @@ const Home = () => {
                   <input
                     type="text"
                     required
-                    value={formData.organization}
+                    value={formData.organizationName}
                     onChange={(e) =>
-                      setFormData({ ...formData, organization: e.target.value })
+                      setFormData({
+                        ...formData,
+                        organizationName: e.target.value,
+                      })
                     }
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
                     placeholder="Hospital or clinic name"
@@ -789,11 +819,11 @@ const Home = () => {
                   </label>
                   <select
                     required
-                    value={formData.productInterest}
+                    value={formData.productName}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
-                        productInterest: e.target.value,
+                        productName: e.target.value,
                       })
                     }
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
