@@ -401,7 +401,6 @@ export const category = [
           alt: "800ml Polywell Stainless Steel Needle Cutter",
         },
       },
-
       {
         id: "manual-needle-syringe-destroyer",
         productName: "Manual Needle Syringe Destroyer",
@@ -462,7 +461,6 @@ export const category = [
           alt: "Manual Needle Syringe Destroyer",
         },
       },
-
       {
         id: "stainless-steel-hub-cutter-for-hospital",
         productName: "Stainless Steel Hub Cutter, For Hospital",
@@ -1285,6 +1283,84 @@ export const category = [
         image: {
           src: "/image/sharp-container-product/Plastic Sharp Disposal Containers.webp",
           alt: "Plastic Sharp Disposal Containers",
+        },
+      },
+      {
+        id: "puncture-proof-box-container-eco-7.5-lt",
+        productName: "Puncture-Proof Box Container (ECO 7.5 LT)",
+
+        description: [
+          { type: "h2", text: "Product Overview" },
+          {
+            type: "ul",
+            items: [
+              "Manufactured by Sangam Plastic Industries Pvt. Ltd. for the ARVS brand.",
+              "Designed for safe disposal of needles, syringes, and other biomedical sharps.",
+              "7.5-litre capacity ideal for hospital environments.",
+              "Made from high-quality puncture-resistant plastic.",
+              "Disposable design minimizes cross-contamination risks.",
+              "Available in Transparent White, Blue, Yellow, and Red for segregation.",
+            ],
+          },
+
+          { type: "h2", text: "Key Features" },
+          {
+            type: "ul",
+            items: [
+              "Puncture-proof design for user safety.",
+              "Secure lid mechanism.",
+              "Durable plastic construction.",
+              "Color-coded biomedical waste segregation.",
+              "Suitable for temporary storage and disposal.",
+              "ISO-certified quality standards.",
+            ],
+          },
+
+          { type: "h2", text: "Applications" },
+          {
+            type: "ul",
+            items: [
+              "Hospital wards and operation theaters.",
+              "Diagnostic laboratories.",
+              "Clinics and healthcare centers.",
+              "Medical colleges.",
+              "Biomedical waste management units.",
+            ],
+          },
+
+          {
+            type: "h2",
+            text: "Why Choose Sangam Plastic Industries Pvt. Ltd.",
+          },
+          {
+            type: "ul",
+            items: [
+              "Experienced manufacturer of hospital-grade waste solutions.",
+              "Advanced manufacturing facility.",
+              "ISO-based quality assurance.",
+              "Bulk supply capability.",
+              "Timely delivery and support.",
+            ],
+          },
+        ],
+
+        specs: [
+          { label: "Capacity", value: "7.5 Ltrs" },
+          { label: "Material", value: "Plastic" },
+          { label: "Size", value: "Large" },
+          { label: "Usage/Application", value: "Hospital" },
+          { label: "Disposability", value: "Disposable" },
+          { label: "Brand", value: "ARVS" },
+          { label: "Color", value: "Transparent White, Blue, Yellow & Red" },
+          { label: "Country of Origin", value: "Made in India" },
+          { label: "Quality Assurance", value: "ISO" },
+          { label: "Model Name/Number", value: "ECO 7.5 LT" },
+          { label: "Availability", value: "In Stock" },
+        ],
+
+        image: {
+          src: "/image/sharp-container-product/puncture-proof-sharp-container.webp",
+          alt: "Puncture-Proof Box Container ECO 7.5 LT",
         },
       },
     ],

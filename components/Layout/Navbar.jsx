@@ -22,7 +22,15 @@ const Navbar = () => {
       submenu: [
         { label: "Needle Cutter", href: "/needle-cutter" },
         { label: "Sharp Containers", href: "/sharp-container" },
-        { label: "Wringer Trolley", href: "/wringer-trolley" },
+        {
+          label: "Wringer Trolley",
+          href: "https://wringertrolleymanufacturer.com",
+        },
+        { label: "Garbage Bag", href: "https://garbagebagmanufacturer.in" },
+        {
+          label: "Plastic Dustbin",
+          href: "https://plasticdustbinmanufacturer.com",
+        },
       ],
     },
     { label: "Contact", href: "/contact" },

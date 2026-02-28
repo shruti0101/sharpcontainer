@@ -29,6 +29,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import axios from "axios";
+import About from "@/components/components/About";
+import PolywellTrustStatsSection from "@/components/components/Pointer";
 
 const Home = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -64,10 +66,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "/api/form/create",
-        formData
-      );
+      const res = await axios.post("/api/form/create", formData);
 
       if (res.status === 200 || res.status === 201) {
         setFormSubmitted(true);
@@ -164,6 +163,12 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* new about section  */}
+      <About />
+
+      {/* pointer  */}
+      <PolywellTrustStatsSection />
 
       {/* second section  */}
       <section className="py-5 blueprint-bg bg-white px-2 md:px-10 lg:px-20 md:py-10 lg:py-20">

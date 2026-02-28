@@ -74,24 +74,36 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Phone size={18} className="text-blue-200" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+919810026034"
                   className="hover:text-blue-200 transition"
                 >
-                  +1 (234) 567-890
+                  +91 98100 26034
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone size={18} className="text-blue-200" />
+                <a
+                  href="tel:+919810316441"
+                  className="hover:text-blue-200 transition"
+                >
+                  +91 98103 16441
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={18} className="text-blue-200" />
                 <a
-                  href="mailto:info@sangam.com"
+                  href="mailto:info@polywell.co.in"
                   className="hover:text-blue-200 transition"
                 >
-                  info@sangam.com
+                  info@polywell.co.in
                 </a>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={18} className="text-blue-200 mt-0.5" />
-                <span>123 dsfsdfsd dsfsd</span>
+                <span>
+                  110, Satya Bhawan, 36 Community Center, Wazirpur Industrial
+                  Area, New Delhi-110052
+                </span>
               </div>
             </div>
           </motion.div>
@@ -128,9 +140,9 @@ const Footer = () => {
         <div className="border-t border-blue-400 my-8"></div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="">
           {/* Social Links */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -151,7 +163,7 @@ const Footer = () => {
                 </motion.a>
               );
             })}
-          </motion.div>
+          </motion.div> */}
 
           {/* Copyright */}
           <motion.div
