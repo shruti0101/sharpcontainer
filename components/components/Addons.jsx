@@ -9,32 +9,27 @@ const Addons = () => {
         <div className=" mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
           <div className="flex flex-col items-center gap-2">
             <img src="/image/addons/3.webp" className="h-18 w-18" />
-            <p className="font-semibold text-gray-900 text-xl">ISO 50001</p>
-            <p className="text-gray-800 text-lg">Certification</p>
+            <p className="font-semibold text-gray-900 text-xl">ISO 50001 Certification</p>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <img src="/image/addons/gem.png" className="h-25 w-38" />
-        
-            <p className="text-gray-800 text-lg">GEM Aprroved Products</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-2">
-            <img src="/image/addons/4.webp" className="h-18 w-18" />
-            <p className="font-semibold text-gray-900 text-xl">Renewable</p>
-            <p className="text-gray-800 text-lg">Power Usage</p>
+          <div className="flex flex-col items-center gap-1">
+            <img src="/image/addons/gem.png" className="h-22 w-35" />
+            <p className="font-semibold text-gray-900 text-xl">GEM Aprroved Products</p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <img src="/image/addons/2.webp" className="h-18 w-18" />
-            <p className="font-semibold text-gray-900 text-xl">Waste</p>
-            <p className="text-gray-800 text-lg">Management</p>
+            <img src="/certificate (1).webp" className="h-18 w-18" />
+            <p className="font-semibold text-gray-900 text-xl">All Necessary Certificate</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-2">
+            <img src="/CDSCO-Import-License.webp" className="h-18 w-22" />
+            <p className="font-semibold text-gray-900 text-xl">CDSCO License</p>
           </div>
 
           <div className="hidden md:flex flex-col items-center gap-2">
-            <img src="/image/addons/5.webp" className="h-18 w-18" />
-            <p className="font-semibold text-gray-900 text-xl">CII Certified</p>
-            <p className="text-gray-800 text-lg">Green Products</p>
+            <img src="/meeting.webp" className="h-18 w-18" />
+            <p className="font-semibold text-gray-900 text-xl">Experince Certificate for Tender</p>
           </div>
         </div>
       </div>

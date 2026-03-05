@@ -156,9 +156,8 @@ const Home = () => {
               key={i}
               onClick={() => setCurrent(i)}
               aria-label={`Go to slide ${i + 1}`}
-              className={`w-3 h-2 rounded-full transition-all ${
-                i === current ? "bg-white" : "bg-white/40"
-              }`}
+              className={`w-3 h-2 rounded-full transition-all ${i === current ? "bg-white" : "bg-white/40"
+                }`}
             />
           ))}
         </div>
@@ -170,7 +169,7 @@ const Home = () => {
       {/* pointer  */}
       <PolywellTrustStatsSection />
 
-      
+
 
       {/* product section  */}
       <section className="py-10 px-2 md:px-10 lg:px-20">
@@ -509,41 +508,25 @@ const Home = () => {
           <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 sm:w-20 md:w-24 h-1 bg-blue-600 font-teko rounded-full"></span>
         </h2>
 
-        <Swiper
-          modules={[Autoplay]}
-          loop={true}
-          speed={4000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          slidesPerView={1.2}
-          spaceBetween={30}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 2.5 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="max-w-7xl mx-auto"
-        >
+        <div className="grid md:grid-cols-5 grid-cols-2 gap-5">
           {cirtificate.map((src, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex justify-center">
-                <div className="bg-white p-3 sm:p-4 rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
-                  <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-125">
-                    <Image
-                      src={src}
-                      alt={`Certificate ${index + 1}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-contain rounded-lg"
-                    />
-                  </div>
+            // <SwiperSlide key={index}>
+            // <div className="flex justify-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
+                <div className="relative w-full h-64">
+                  <Image
+                    src={src}
+                    alt={`Certificate ${index + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-contain rounded-lg"
+                  />
                 </div>
               </div>
-            </SwiperSlide>
+            // </div>
+            // </SwiperSlide>
           ))}
-        </Swiper>
+        </div>
       </section>
 
       {/* A Trusted Manufacturer of Sharp  */}

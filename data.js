@@ -32,15 +32,15 @@ export const homeProductData = [
   },
   {
     id: 3,
-    image: "/image/sharp-container/25 Ltr-Photoroom.webp",
-    title: "35 Ltr container ",
-    desc: "Durable puncture-proof 35L sharp container for safe and compliant biomedical waste disposal",
+    image: "/image/needle-container/1 Litre Manual Needle Cutter.webp",
+    title: "1 Litre Manual Needle Cutter",
+    desc: "Manual operation enables safe and precise cutting of needles and syringe hubs.",
   },
   {
     id: 4,
-    image: "/image/sharp-container/6Ltr (2)-Photoroom.webp",
-    title: "6 Ltr container ",
-    desc: "Heavy-duty puncture-proof 6L sharp container for safe biomedical waste disposal",
+    image: "/image/needle-container/Needle Cutter Range.webp",
+    title: "Needle Cutter Range",
+    desc: "Rectangular shape provides stability and efficient placement on industrial and laboratory workstations.",
   },
 ];
 
@@ -310,7 +310,7 @@ export const cirtificate = [
   "/image/home/cirtificates/7.webp",
   "/image/home/cirtificates/8.webp",
   "/image/home/cirtificates/9.webp",
-  "/image/home/cirtificates/10.webp",
+  // "/image/home/cirtificates/10.webp",
   "/image/home/cirtificates/11.webp",
 ];
 

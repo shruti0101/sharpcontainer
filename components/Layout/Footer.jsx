@@ -88,8 +88,11 @@ const Footer = () => {
           >
             <h3 className="text-2xl font-teko font-semibold">Contact Us</h3>
             <p className="text-gray-100 text-lg">
-              Address - 110, Satya Bhawan, 36 Community Center, Wazirpur
+             Office Address - 110, Satya Bhawan, 36 Community Center, Wazirpur
               Industrial Area, New Delhi-110052
+            </p>
+            <p className="text-gray-100 text-lg font-semibold">
+             Manufacturing Address Spread Across Delhi NCR
             </p>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
