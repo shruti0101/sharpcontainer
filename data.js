@@ -210,44 +210,6 @@ export const testimonial = [
   },
 ];
 
-export const slides = [
-
-
- {
-    image: "/image/home/banner2.webp",
-    title: "Sharp Container Manufacturer",
-    subtitle:
-      "Hygienic, puncture-resistant containers for safe sharps disposal.",
-    ctaPrimary: { href: "/product", label: "See Solutions" },
-    ctaSecondary: { href: "/contact", label: "Request Quote" },
-  },
-
-
-
-  {
-    image: "/image/home/banner3.webp",
-    title: "Safe Sharps Disposal Starts Here",
-    subtitle: "High-quality sharp containers designed for healthcare safety.",
-    ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
-    ctaSecondary: { href: "/contact", label: "Contact Sales" },
-  },
-  {
-    image: "/image/home/banner1.webp",
-    title: "",
-    subtitle: "",
-    ctaPrimary: { href: "/product", label: "Our Products" },
-    ctaSecondary: { href: "/contact", label: "Contact Us" },
-  },
- 
-
-  {
-    image: "/image/home/banner4.jpg",
-    title: "Designed for Safety. Built for Compliance.",
-    subtitle: "Reliable sharp containers for medical and clinical use.",
-    ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
-    ctaSecondary: { href: "/contact", label: "Contact Sales" },
-  },
-];
 
 export const aboutOurVision = [
   {

@@ -41,7 +41,7 @@ function StatCardLeft({ title, desc }) {
 
 export default function PolywellTrustStatsSection() {
   return (
-    <section className="w-full py-16 bg-gradient-to-b from-[#f8fafc] to-white">
+    <section className="w-full py-7 md:py-16 bg-gradient-to-b from-[#f8fafc] to-white">
       <div className="max-w-7xl mx-auto px-4">
 
         <motion.div
