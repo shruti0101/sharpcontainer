@@ -44,8 +44,6 @@ export const homeProductData = [
   },
 ];
 
-
-
 export const otherproduct = [
   {
     id: 1,
@@ -72,8 +70,6 @@ export const otherproduct = [
     desc: "Heavy-duty pallets for storing and transporting goods securely in warehouses or industrial settings.",
   },
 ];
-
-
 
 export const faqs = [
   {
@@ -313,9 +309,3 @@ export const cirtificate = [
   // "/image/home/cirtificates/10.webp",
   "/image/home/cirtificates/11.webp",
 ];
-
-
-
-
-
-

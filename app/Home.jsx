@@ -33,6 +33,54 @@ import About from "@/components/components/About";
 import PolywellTrustStatsSection from "@/components/components/Pointer";
 
 const Home = () => {
+
+
+
+
+
+ const slides = [
+
+
+ {
+    image: "/image/home/banner2.webp",
+        mobileImage: "/mobile1.webp",
+    title: "Sharp Container Manufacturer",
+    subtitle:
+      "Hygienic, puncture-resistant containers for safe sharps disposal.",
+    ctaPrimary: { href: "/product", label: "See Solutions" },
+    ctaSecondary: { href: "/contact", label: "Request Quote" },
+  },
+
+
+
+  {
+    image: "/image/home/banner3.webp",
+     mobileImage: "/mobile2.webp",
+    title: "Safe Sharps Disposal Starts Here",
+    subtitle: "High-quality sharp containers designed for healthcare safety.",
+    ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
+    ctaSecondary: { href: "/contact", label: "Contact Sales" },
+  },
+  {
+    image: "/image/home/banner1.webp",
+       mobileImage: "/mob3.webp",
+    title: "",
+    subtitle: "",
+    ctaPrimary: { href: "/product", label: "Our Products" },
+    ctaSecondary: { href: "/contact", label: "Contact Us" },
+  },
+ 
+
+  // {
+  //   image: "/image/home/banner4.jpg",
+  //   title: "Designed for Safety. Built for Compliance.",
+  //   subtitle: "Reliable sharp containers for medical and clinical use.",
+  //   ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
+  //   ctaSecondary: { href: "/contact", label: "Contact Sales" },
+  // },
+];
+
+
   const [openFAQ, setOpenFAQ] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -86,6 +134,26 @@ const Home = () => {
     }
   }
 
+
+
+
+
+
+
+const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  handleResize();
+  window.addEventListener("resize", handleResize);
+
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+
   return (
     <div className="">
       {/* success message  */}
@@ -103,7 +171,7 @@ const Home = () => {
       </AnimatePresence>
 
       {/* hero carousel */}
-      <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-hidden">
+      <section className="relative w-full h-[430px] md:h-[70vh] lg:h-[90vh] overflow-hidden">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
@@ -114,18 +182,18 @@ const Home = () => {
             className="absolute inset-0"
           >
             <Image
-              src={slides[current].image}
+             src={isMobile ? slides[current].mobileImage : slides[current].image}
               alt={slides[current].title}
               fill
               priority
-              className="object-cover"
+              className="max-w-full h-auto object-cover"
             />
 
-            <div className="absolute top-14 md:top-14 md:left-10 lg:top-30 lg:flex flex-col justify-center px-6 ">
-              <h2 className="text-black font-extrabold text-3xl md:text-4xl  lg:text-7xl max-w-2xl md:w-90  lg:w-full font-teko lg:ml-14">
+            <div className="hidden md:block absolute top-14 md:top-14 md:left-10 lg:top-30 lg:flex flex-col justify-center px-6 ">
+              <h2 className="text-black  font-extrabold text-2xl md:text-4xl  lg:text-7xl max-w-2xl md:w-90  lg:w-full font-teko lg:ml-14">
                 {slides[current].title}
               </h2>
-              <p className="mt-4 text-lg md:text-2xl text-black w-40 md:w-80 lg:w-[450px] lg:ml-14">
+              <p className="hidden md:block mt-4 text-lg md:text-2xl text-black w-40 md:w-80 lg:w-[450px] lg:ml-14">
                 {slides[current].subtitle}
               </p>
             </div>
@@ -172,7 +240,7 @@ const Home = () => {
 
 
       {/* product section  */}
-      <section className="py-10 px-2 md:px-10 lg:px-20">
+      <section className="py-5 px-2 md:px-10 lg:px-20">
         <p className="font-bold text-3xl text-center py-6">
           Reliable Biomedical Waste Management Solutions
         </p>
@@ -221,7 +289,7 @@ const Home = () => {
           Your Trusted Sharp Container & Needle Destroyer Manufacturer Since
           1988
         </h2>
-        <p className="py-3 text-justify text-black text-lg">
+        <p className="py-3 px-2 text-justify text-black text-lg">
           Established in 1988,{" "}
           <strong>Sangam Plastic Industries Pvt Ltd</strong> has been a trusted
           Sharp Container Manufacturer and Needle Destroyer Manufacturer,
@@ -231,7 +299,7 @@ const Home = () => {
           producing durable, safe, and regulation-compliant products designed to
           ensure secure disposal of medical sharps and needles.
         </p>
-        <p className="py-3 text-justify text-black text-lg">
+        <p className="py-3 px-2 text-justify text-black text-lg">
           Based in Delhi, India, our advanced manufacturing facility is equipped
           with modern machinery and quality control systems that enable us to
           meet large-scale production requirements while maintaining strict
@@ -240,7 +308,7 @@ const Home = () => {
           institutional clients by consistently delivering products that are
           reliable, hygienic, cost-effective, and built for long-term use.
         </p>
-        <p className="py-3 text-justify text-black text-lg">
+        <p className="py-3 px-2 text-justify text-black text-lg">
           Driven by innovation and guided by strong leadership, our experienced
           team remains committed to enhancing healthcare safety through
           continuous improvement, product development, and customer-focused
