@@ -43,7 +43,7 @@ const Home = () => {
 
  {
     image: "/image/home/banner2.webp",
-        mobileImage: "/banner1.webp",
+        mobileImage: "/mob1.webp",
     title: "Sharp Container Manufacturer",
     subtitle:
       "Hygienic, puncture-resistant containers for safe sharps disposal.",
@@ -55,7 +55,7 @@ const Home = () => {
 
   {
     image: "/image/home/banner3.webp",
-     mobileImage: "/banner2.webp",
+     mobileImage: "/mob2.webp",
     title: "Safe Sharps Disposal Starts Here",
     subtitle: "High-quality sharp containers designed for healthcare safety.",
     ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
@@ -63,7 +63,7 @@ const Home = () => {
   },
   {
     image: "/image/home/banner1.webp",
-       mobileImage: "/banner3.webp",
+       mobileImage: "/mob3.webp",
     title: "",
     subtitle: "",
     ctaPrimary: { href: "/product", label: "Our Products" },
@@ -171,7 +171,7 @@ useEffect(() => {
       </AnimatePresence>
 
       {/* hero carousel */}
-      <section className="relative w-full h-[500px] md:h-[70vh] lg:h-[90vh] overflow-hidden">
+      <section className="relative w-full h-[430px] md:h-[70vh] lg:h-[90vh] overflow-hidden">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
