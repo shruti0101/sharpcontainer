@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
+import TranslateButton from "../GoogleTranslate";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -220,6 +221,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
+      <TranslateButton/>
     </nav>
   );
 };

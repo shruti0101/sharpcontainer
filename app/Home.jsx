@@ -512,7 +512,7 @@ const Home = () => {
           {cirtificate.map((src, index) => (
             // <SwiperSlide key={index}>
             // <div className="flex justify-center">
-              <div className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
+              <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <div className="relative w-full h-64">
                   <Image
                     src={src}

@@ -1,23 +1,31 @@
-"use client";
+'use client'
+import { PhoneCall } from "lucide-react";
+import React from "react";
 
-import Image from "next/image";
-
-const Chat = () => {
+const Whatsapp = () => {
   return (
-    <a
-      target="_blank"
-      className="fixed bottom-10 right-10 z-50"
-      href="https://wa.me/919810316441"
-    >
-      <Image
-        className="h-14 md:h-18 w-auto"
-        src={"/whatsapp.png"}
-        height={1000}
-        width={1000}
-        alt="whatsapp chat"
-      />
-    </a>
+    <>
+      {/* WhatsApp Floating Button (Right side) */}
+      <a
+        href="https://wa.me/+919810316441"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp "
+        className="fixed bottom-5 right-4 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition animate-bounce"
+      >
+       <img src="/whatsapp.png" className="h-8 w-8" alt="loading" />
+      </a>
+
+      {/* Call Floating Button (Left side) */}
+      <a
+        href="tel:+919810316441"
+        aria-label="Call us"
+        className="fixed bottom-21 right-4 z-50 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition animate-bounce"
+      >
+        <PhoneCall size={30} />
+      </a>
+    </>
   );
 };
 
-export default Chat;
+export default Whatsapp;

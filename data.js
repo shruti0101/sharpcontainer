@@ -213,14 +213,14 @@ export const testimonial = [
 export const slides = [
 
 
- {
-    image: "/image/home/banner2.webp",
-    title: "Sharp Container Manufacturer",
-    subtitle:
-      "Hygienic, puncture-resistant containers for safe sharps disposal.",
-    ctaPrimary: { href: "/product", label: "See Solutions" },
-    ctaSecondary: { href: "/contact", label: "Request Quote" },
-  },
+//  {
+//     image: "/image/home/banner2.webp",
+//     title: "Sharp Container Manufacturer",
+//     subtitle:
+//       "Hygienic, puncture-resistant containers for safe sharps disposal.",
+//     ctaPrimary: { href: "/product", label: "See Solutions" },
+//     ctaSecondary: { href: "/contact", label: "Request Quote" },
+//   },
 
 
 
