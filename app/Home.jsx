@@ -43,7 +43,7 @@ const Home = () => {
 
  {
     image: "/image/home/banner2.webp",
-        mobileImage: "/mob1.webp",
+        mobileImage: "/mobile1.webp",
     title: "Sharp Container Manufacturer",
     subtitle:
       "Hygienic, puncture-resistant containers for safe sharps disposal.",
@@ -55,7 +55,7 @@ const Home = () => {
 
   {
     image: "/image/home/banner3.webp",
-     mobileImage: "/mob2.webp",
+     mobileImage: "/mobile2.webp",
     title: "Safe Sharps Disposal Starts Here",
     subtitle: "High-quality sharp containers designed for healthcare safety.",
     ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
