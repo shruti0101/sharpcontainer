@@ -31,6 +31,7 @@ import "swiper/css";
 import axios from "axios";
 import About from "@/components/components/About";
 import PolywellTrustStatsSection from "@/components/components/Pointer";
+import Loactions from "@/components/Loactions";
 
 const Home = () => {
 
@@ -38,47 +39,47 @@ const Home = () => {
 
 
 
- const slides = [
+  const slides = [
 
 
- {
-    image: "/image/home/banner2.webp",
-        mobileImage: "/mobile1.webp",
-    title: "Sharp Container Manufacturer",
-    subtitle:
-      "Hygienic, puncture-resistant containers for safe sharps disposal.",
-    ctaPrimary: { href: "/product", label: "See Solutions" },
-    ctaSecondary: { href: "/contact", label: "Request Quote" },
-  },
+    {
+      image: "/image/home/banner2.webp",
+      mobileImage: "/mobile1.webp",
+      title: "Sharp Container Manufacturer",
+      subtitle:
+        "Hygienic, puncture-resistant containers for safe sharps disposal.",
+      ctaPrimary: { href: "/product", label: "See Solutions" },
+      ctaSecondary: { href: "/contact", label: "Request Quote" },
+    },
 
 
 
-  {
-    image: "/image/home/banner3.webp",
-     mobileImage: "/mobile2.webp",
-    title: "Safe Sharps Disposal Starts Here",
-    subtitle: "High-quality sharp containers designed for healthcare safety.",
-    ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
-    ctaSecondary: { href: "/contact", label: "Contact Sales" },
-  },
-  {
-    image: "/image/home/banner1.webp",
-       mobileImage: "/mob3.webp",
-    title: "",
-    subtitle: "",
-    ctaPrimary: { href: "/product", label: "Our Products" },
-    ctaSecondary: { href: "/contact", label: "Contact Us" },
-  },
- 
+    {
+      image: "/image/home/banner3.webp",
+      mobileImage: "/mobile2.webp",
+      title: "Safe Sharps Disposal Starts Here",
+      subtitle: "High-quality sharp containers designed for healthcare safety.",
+      ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
+      ctaSecondary: { href: "/contact", label: "Contact Sales" },
+    },
+    {
+      image: "/image/home/banner1.webp",
+      mobileImage: "/mob3.webp",
+      title: "",
+      subtitle: "",
+      ctaPrimary: { href: "/product", label: "Our Products" },
+      ctaSecondary: { href: "/contact", label: "Contact Us" },
+    },
 
-  // {
-  //   image: "/image/home/banner4.jpg",
-  //   title: "Designed for Safety. Built for Compliance.",
-  //   subtitle: "Reliable sharp containers for medical and clinical use.",
-  //   ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
-  //   ctaSecondary: { href: "/contact", label: "Contact Sales" },
-  // },
-];
+
+    // {
+    //   image: "/image/home/banner4.jpg",
+    //   title: "Designed for Safety. Built for Compliance.",
+    //   subtitle: "Reliable sharp containers for medical and clinical use.",
+    //   ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
+    //   ctaSecondary: { href: "/contact", label: "Contact Sales" },
+    // },
+  ];
 
 
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -140,18 +141,18 @@ const Home = () => {
 
 
 
-const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-useEffect(() => {
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-  handleResize();
-  window.addEventListener("resize", handleResize);
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
   return (
@@ -182,7 +183,7 @@ useEffect(() => {
             className="absolute inset-0"
           >
             <Image
-             src={isMobile ? slides[current].mobileImage : slides[current].image}
+              src={isMobile ? slides[current].mobileImage : slides[current].image}
               alt={slides[current].title}
               fill
               priority
@@ -580,17 +581,17 @@ useEffect(() => {
           {cirtificate.map((src, index) => (
             // <SwiperSlide key={index}>
             // <div className="flex justify-center">
-              <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
-                <div className="relative w-full h-64">
-                  <Image
-                    src={src}
-                    alt={`Certificate ${index + 1}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-contain rounded-lg"
-                  />
-                </div>
+            <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
+              <div className="relative w-full h-64">
+                <Image
+                  src={src}
+                  alt={`Certificate ${index + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-contain rounded-lg"
+                />
               </div>
+            </div>
             // </div>
             // </SwiperSlide>
           ))}
@@ -950,6 +951,8 @@ useEffect(() => {
           </div>
         </div>
       </section>
+
+      <Loactions />
     </div>
   );
 };

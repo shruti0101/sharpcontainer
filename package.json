@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "axios": "^1.13.6",
+    "cloudinary": "^2.9.0",
+    "jodit": "^4.11.11",
+    "jodit-react": "^5.3.21",
     "lucide-react": "^0.563.0",
+    "mongoose": "^8.23.0",
     "motion": "^12.29.2",
     "next": "16.1.6",
     "nodemailer": "^8.0.1",

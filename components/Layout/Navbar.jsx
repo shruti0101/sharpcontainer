@@ -34,6 +34,7 @@ const Navbar = () => {
         },
       ],
     },
+    { label: "Blogs", href: "/blogs" },
     { label: "Contact", href: "/contact" },
   ];
 
