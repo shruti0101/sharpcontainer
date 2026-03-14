@@ -173,7 +173,7 @@ const Home = () => {
       </AnimatePresence>
 
       {/* hero carousel */}
-      <section className="relative w-full h-[540px] md:h-[70vh] lg:h-[100vh] overflow-hidden">
+      <section className="relative w-full h-[430px] md:h-[70vh] lg:h-[100vh] overflow-hidden">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}

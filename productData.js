@@ -804,8 +804,8 @@ export const category = [
 
       
       {
-        id: "0.800ml-sharp-container",
-        productName: "0.800 ML Sharp Container",
+        id: "800ml-sharp-container",
+        productName: "800 ML Sharp Container",
 
         description: [
           { type: "h2", text: "Product Overview" },
@@ -825,7 +825,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Compact 0.800 L capacity.",
+              "Compact 800 L capacity.",
               "Random polypropylene construction.",
               "Lightweight and easy to handle.",
               "Leak-proof design.",
@@ -863,7 +863,7 @@ export const category = [
         ],
 
         specs: [
-          { label: "Capacity", value: "0.800 L" },
+          { label: "Capacity", value: "800 L" },
           { label: "Material", value: "Random Polypropylene" },
           { label: "Brand", value: "Polywell" },
           { label: "Model No", value: "PWSC0.800" },
