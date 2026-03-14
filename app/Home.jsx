@@ -173,7 +173,7 @@ const Home = () => {
       </AnimatePresence>
 
       {/* hero carousel */}
-      <section className="relative w-full h-[430px] md:h-[70vh] lg:h-[90vh] overflow-hidden">
+      <section className="relative w-full h-[540px] md:h-[70vh] lg:h-[100vh] overflow-hidden">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
@@ -191,7 +191,7 @@ const Home = () => {
               className="max-w-full h-auto object-cover"
             />
 
-            <div className="hidden md:block absolute top-14 md:top-14 md:left-10 lg:top-30 lg:flex flex-col justify-center px-6 ">
+            <div className="hidden md:block absolute top-20  md:left-10 lg:top-30 lg:flex flex-col justify-center px-6 ">
               <h2 className="text-black  font-extrabold text-2xl md:text-4xl  lg:text-7xl max-w-2xl md:w-90  lg:w-full font-teko lg:ml-14">
                 {slides[current].title}
               </h2>
@@ -256,33 +256,44 @@ const Home = () => {
           hygiene, and regulatory compliance in healthcare environments.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  mt-6">
-          {homeProductData.map(({ id, image, title, desc,link }) => (
-            <Link href={link}
-              className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
-              key={id}
-            >
-              <div className="relative h-83 w-full  overflow-hidden">
-                <Image
-                  src={image}
-                  alt={title}
-                  width={1000}
-                  height={1000}
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 "
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl capitalize text-center font-bold text-gray-900 ">
-                  {title}
-                </h3>
-                <p className="py-3 text-black text-center">{desc}</p>
-                <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
-                  View Details
-                </button>
-              </div>
-            </Link>
-          ))}
-        </div>
+   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
+  {homeProductData.map(({ id, image, title, desc, link }) => (
+    <Link
+      href={link}
+      key={id}
+      className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
+    >
+      <div className="relative h-83 w-full overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          width={1000}
+          height={1000}
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+
+      <div className="p-6">
+        <h3 className="text-2xl capitalize text-center font-bold text-gray-900">
+          {title}
+        </h3>
+
+        <p className="py-3 text-black text-center">{desc}</p>
+
+        <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
+          View Details
+        </button>
+      </div>
+    </Link>
+  ))}
+</div>
+
+{/* CENTER BUTTON */}
+<div className="flex justify-center mt-10">
+  <Link href="/sharp-container" className="py-3 px-8 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors text-xl">
+    All Products
+  </Link>
+</div>
       </section>
 
       {/* second section  */}

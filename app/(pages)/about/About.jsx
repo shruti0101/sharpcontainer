@@ -4,7 +4,7 @@ import { aboutOurVision, OurCoreValue } from "@/data";
 
 const About = () => {
   return (
-    <div className="px-4 md:px-10 lg:px-20 py-10">
+    <div className="px-4 md:px-10 lg:px-20 py-10 md:mt-10">
       <section className="max-w-6xl mx-auto">
         <p className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-teko mb-8">
           Committed to Safe Biomedical Waste Solutions Since 1988

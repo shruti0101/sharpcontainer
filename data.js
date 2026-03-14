@@ -29,7 +29,7 @@ export const homeProductData = [
     id: 2,
     image: "/image/sharp-container/10 Ltr (1)-Photoroom.webp",
     title: "Plastic 12L Sharp Containers",
-    desc: "Heavy-duty puncture-proof 10L sharp container for safe biomedical waste disposal",
+    desc: "Heavy-duty puncture-proof 12L sharp container for safe biomedical waste disposal",
     link: "/sharp-container"
   },
   {
