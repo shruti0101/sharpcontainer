@@ -6,7 +6,7 @@ export const category = [
     metaTitle: "500 ML ABS Hub Cutter Range | Safe Biomedical Waste Hub Cutter",
 
     metaDescription:
-      "500 ML ABS Hub Cutter Range manufactured by Sangam Industries for safe syringe hub cutting and biomedical waste management. Durable metal construction with compact design for hospitals and clinics.",
+      "500 ML ABS Hub Cutter Range manufactured by Sangam Plastic Industries for safe syringe hub cutting and biomedical waste management. Durable metal construction with compact design for hospitals and clinics.",
 
     excerpt:
       "Durable 500 ML ABS Hub Cutter designed for safe syringe hub cutting, preventing needle-stick injuries and ensuring safe biomedical waste handling.",
@@ -25,7 +25,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience",
               "Designed for safe cutting of syringe hubs immediately after needle removal to prevent accidental needle-stick injuries and contamination",
               "Made using high-quality metal construction ensuring durability and long operational life in clinical environments",
               "Compact 500 ML capacity suitable for hospitals, clinics, diagnostic labs, and vaccination centers with limited workspace",
@@ -68,7 +68,7 @@ export const category = [
 
           {
             type: "h2",
-            text: "Why Choose Sangam Industries",
+            text: "Why Choose Sangam Plastic Industries",
           },
           {
             type: "ul",
@@ -93,7 +93,7 @@ export const category = [
             value: "Cutting syringe hubs safely after needle removal",
           },
           { label: "Color", value: "Blue" },
-          { label: "Manufacturer", value: "Sangam Industries" },
+          { label: "Manufacturer", value: "Sangam Plastic Industries" },
         ],
 
         image: {
@@ -116,7 +116,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience",
               "Designed for safe cutting of syringe hubs immediately after needle removal to prevent accidental needle-stick injuries and contamination",
               "Made using high-quality metal construction ensuring durability and long operational life in clinical environments",
               "Compact 1 L capacity suitable for hospitals, clinics, diagnostic labs, and vaccination centers with limited workspace",
@@ -159,7 +159,7 @@ export const category = [
 
           {
             type: "h2",
-            text: "Why Choose Sangam Industries",
+            text: "Why Choose Sangam Plastic Industries",
           },
           {
             type: "ul",
@@ -184,7 +184,7 @@ export const category = [
             value: "Cutting syringe hubs safely after needle removal",
           },
           { label: "Color", value: "Blue" },
-          { label: "Manufacturer", value: "Sangam Industries" },
+          { label: "Manufacturer", value: "Sangam Plastic Industries" },
         ],
 
         image: {
@@ -205,7 +205,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience",
               "Designed for safe cutting of syringe hubs immediately after needle removal to prevent accidental needle-stick injuries and contamination",
               "Made using high-quality metal construction ensuring durability and long operational life in clinical environments",
               "Compact 1.1L capacity suitable for hospitals, clinics, diagnostic labs, and vaccination centers with limited workspace",
@@ -248,7 +248,7 @@ export const category = [
 
           {
             type: "h2",
-            text: "Why Choose Sangam Industries",
+            text: "Why Choose Sangam Plastic Industries",
           },
           {
             type: "ul",
@@ -273,7 +273,7 @@ export const category = [
             value: "Cutting syringe hubs safely after needle removal",
           },
           { label: "Color", value: "Blue" },
-          { label: "Manufacturer", value: "Sangam Industries" },
+          { label: "Manufacturer", value: "Sangam Plastic Industries" },
         ],
 
         image: {
@@ -292,7 +292,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with decades of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries with decades of expertise in biomedical waste management.",
               "Designed for safe, hygienic, and precise cutting of needles and syringe hubs in clinics.",
               "Constructed from premium-grade stainless steel for durability and corrosion resistance.",
               "Non-electric manual operation ensures safe handling without power supply.",
@@ -350,7 +350,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with over 30 years of experience.",
+              "Manufactured by Sangam Plastic Industries with over 50 years of experience.",
               "Manual needle cum syringe hub destroyer for laboratory use.",
               "Made from premium plastic with stainless steel components.",
               "Non-electric operation ensures safe and controlled handling.",
@@ -416,7 +416,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience in biomedical waste management solutions.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with over three decades of experience in biomedical waste management solutions.",
               "Designed for safe, hygienic, and efficient cutting of used needles and syringe hubs in hospitals, clinics, and healthcare facilities.",
               "Developed using high-quality plastic and mild steel for durability, corrosion resistance, and long-lasting performance.",
               "Compact 1-litre capacity ideal for small to medium healthcare facilities requiring safe needle disposal.",
@@ -458,7 +458,7 @@ export const category = [
 
           {
             type: "h2",
-            text: "Why Choose Sangam Industries",
+            text: "Why Choose Sangam Plastic Industries",
           },
           {
             type: "ul",
@@ -501,7 +501,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with decades of experience in biomedical waste management solutions.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer and Needle Destroyer Manufacturer with decades of experience in biomedical waste management solutions.",
               "Designed for safe, efficient, and hygienic cutting of needles and syringe hubs in industrial and healthcare settings.",
               "Developed by a certified Puncture Proof Box Manufacturer ensuring durability, resistance to wear, and safe operation for repeated industrial use.",
               "Constructed from premium materials with powder-coated finishing for long-lasting protection against corrosion, scratches, and surface damage.",
@@ -545,7 +545,7 @@ export const category = [
 
           {
             type: "h2",
-            text: "Why Choose Sangam Industries",
+            text: "Why Choose Sangam Plastic Industries",
           },
           {
             type: "ul",
@@ -580,7 +580,7 @@ export const category = [
             label: "Capacity",
             value: "Industrial Standard (Customizable on Request)",
           },
-          { label: "Manufacturer", value: "Sangam Industries" },
+          { label: "Manufacturer", value: "Sangam Plastic Industries" },
         ],
 
         image: {
@@ -603,7 +603,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries with over 50 years of expertise in biomedical waste management.",
               "Designed for safe and hygienic cutting of used needles to reduce needle-stick injuries.",
               "Supports cutting of needles ranging from 18G to 27G.",
               "Stainless steel body ensures durability and corrosion resistance.",
@@ -663,7 +663,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries for safe biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries for safe biomedical waste management.",
               "Designed for efficient cutting of syringe hubs in hospitals.",
               "Made from high-grade stainless steel for durability.",
               "Prevents reuse and minimizes needle-stick injuries.",
@@ -719,7 +719,7 @@ export const category = [
     metaTitle: "500 ML ABS Hub Cutter Range | Safe Biomedical Waste Hub Cutter",
 
     metaDescription:
-      "500 ML ABS Hub Cutter Range manufactured by Sangam Industries for safe syringe hub cutting and biomedical waste management. Durable metal construction with compact design for hospitals and clinics.",
+      "500 ML ABS Hub Cutter Range manufactured by Sangam Plastic Industries for safe syringe hub cutting and biomedical waste management. Durable metal construction with compact design for hospitals and clinics.",
 
     excerpt:
       "Durable 500 ML ABS Hub Cutter designed for safe syringe hub cutting, preventing needle-stick injuries and ensuring safe biomedical waste handling.",
@@ -737,7 +737,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with over three decades of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries with over three decades of expertise in biomedical waste management.",
               "Designed for safe disposal of used needles, lancets, syringes, and other medical sharps.",
               "Made from high-quality random polypropylene ensuring puncture resistance.",
               "Compact design ideal for OPDs, diagnostic labs, and mobile healthcare units.",
@@ -773,7 +773,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -804,15 +804,15 @@ export const category = [
 
       
       {
-        id: "0.800l-sharp-container",
-        productName: "0.800 L Sharp Container",
+        id: "0.800ml-sharp-container",
+        productName: "0.800 ML Sharp Container",
 
         description: [
           { type: "h2", text: "Product Overview" },
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with over three decades of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries with over three decades of expertise in biomedical waste management.",
               "Designed for safe disposal of used needles, lancets, syringes, and other medical sharps.",
               "Made from high-quality random polypropylene ensuring puncture resistance.",
               "Compact design ideal for OPDs, diagnostic labs, and mobile healthcare units.",
@@ -848,7 +848,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -887,7 +887,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
               "Designed for safe, hygienic, and regulated disposal of medical sharps such as needles, syringes, and lancets.",
               "Made from PPCP material ensuring durability and puncture resistance.",
               "Suitable for hospitals, diagnostic laboratories, and vaccination centers.",
@@ -923,7 +923,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -963,7 +963,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer, delivering high-quality biomedical waste solutions for hospitals, clinics, and laboratories.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer, delivering high-quality biomedical waste solutions for hospitals, clinics, and laboratories.",
               "Designed for safe, hygienic, and regulated disposal of used needles, syringes, lancets, and other sharps.",
               "Made from random polypropylene, ensuring puncture resistance, durability, and long-lasting performance.",
               "Compact 1.5-litre capacity makes it ideal for point-of-care areas, small clinics, and laboratories where space efficiency is important.",
@@ -999,7 +999,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1042,7 +1042,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
               "Designed for safe and compliant disposal of medical sharps such as needles and syringes.",
               "Made from high-quality plastic ensuring durability and puncture resistance.",
               "Transparent design allows monitoring of sharps levels.",
@@ -1077,7 +1077,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1115,7 +1115,7 @@ export const category = [
 
   {
         id: "puncture-proof-box-container-5-ltr",
-        productName: "Puncture-Proof Box Container 5 LTR)",
+        productName: "Puncture-Proof Box Container (5 LTR)",
 
         description: [
           { type: "h2", text: "Product Overview" },
@@ -1203,7 +1203,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of experience in biomedical waste management.",
               "Designed for safe disposal of used needles, syringes, and other sharps.",
               "Made from high-quality plastic ensuring puncture resistance and durability.",
               "Transparent design allows monitoring of sharps levels.",
@@ -1239,7 +1239,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1280,7 +1280,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of expertise in biomedical waste management.",
               "Designed for safe disposal of medical sharps such as needles, syringes, lancets, and blades.",
               "Made from high-quality durable plastic ensuring puncture resistance.",
               "Medium-sized 10 Litre capacity ideal for hospital wards and laboratories.",
@@ -1316,7 +1316,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1360,7 +1360,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of expertise in biomedical waste management.",
               "Designed for safe disposal of medical sharps including needles, syringes, and lancets.",
               "Made from durable plastic ensuring puncture resistance.",
               "Standard design suitable for high-traffic hospital wards and laboratories.",
@@ -1397,7 +1397,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1438,7 +1438,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of expertise in biomedical waste management.",
               "Designed for safe disposal of medical sharps including needles, syringes, and lancets.",
               "Constructed from high-quality random polypropylene ensuring puncture resistance.",
               "Large 26-litre capacity ideal for hospital wards and laboratories.",
@@ -1474,7 +1474,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1516,7 +1516,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
               "Designed for safe collection and disposal of used needles, syringes, blades, and lancets.",
               "Made from high-quality puncture-resistant plastic.",
               "Rectangular shape allows efficient space utilization.",
@@ -1553,7 +1553,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1591,7 +1591,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer specializing in biomedical waste disposal.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer specializing in biomedical waste disposal.",
               "Designed for safe disposal of used needles, syringes, lancets, and blades.",
               "Constructed from high-quality puncture-resistant plastic.",
               "Open-top structure allows quick disposal without hand contact.",
@@ -1630,7 +1630,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1674,7 +1674,7 @@ export const category = [
     metaTitle: "500 ML ABS Hub Cutter Range | Safe Biomedical Waste Hub Cutter",
 
     metaDescription:
-      "500 ML ABS Hub Cutter Range manufactured by Sangam Industries for safe syringe hub cutting and biomedical waste management. Durable metal construction with compact design for hospitals and clinics.",
+      "500 ML ABS Hub Cutter Range manufactured by Sangam Plastic Industries for safe syringe hub cutting and biomedical waste management. Durable metal construction with compact design for hospitals and clinics.",
 
     excerpt:
       "Durable 500 ML ABS Hub Cutter designed for safe syringe hub cutting, preventing needle-stick injuries and ensuring safe biomedical waste handling.",
@@ -1692,7 +1692,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with over three decades of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries with over three decades of expertise in biomedical waste management.",
               "Designed for safe disposal of used needles, lancets, syringes, and other medical sharps.",
               "Made from high-quality random polypropylene ensuring puncture resistance.",
               "Compact design ideal for OPDs, diagnostic labs, and mobile healthcare units.",
@@ -1728,7 +1728,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1767,7 +1767,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries with over three decades of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries with over three decades of expertise in biomedical waste management.",
               "Designed for safe disposal of used needles, lancets, syringes, and other medical sharps.",
               "Made from high-quality random polypropylene ensuring puncture resistance.",
               "Compact design ideal for OPDs, diagnostic labs, and mobile healthcare units.",
@@ -1803,7 +1803,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1842,7 +1842,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
               "Designed for safe, hygienic, and regulated disposal of medical sharps such as needles, syringes, and lancets.",
               "Made from PPCP material ensuring durability and puncture resistance.",
               "Suitable for hospitals, diagnostic laboratories, and vaccination centers.",
@@ -1878,7 +1878,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1918,7 +1918,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer, delivering high-quality biomedical waste solutions for hospitals, clinics, and laboratories.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer, delivering high-quality biomedical waste solutions for hospitals, clinics, and laboratories.",
               "Designed for safe, hygienic, and regulated disposal of used needles, syringes, lancets, and other sharps.",
               "Made from random polypropylene, ensuring puncture resistance, durability, and long-lasting performance.",
               "Compact 1.5-litre capacity makes it ideal for point-of-care areas, small clinics, and laboratories where space efficiency is important.",
@@ -1954,7 +1954,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -1997,7 +1997,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
               "Designed for safe and compliant disposal of medical sharps such as needles and syringes.",
               "Made from high-quality plastic ensuring durability and puncture resistance.",
               "Transparent design allows monitoring of sharps levels.",
@@ -2032,7 +2032,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -2158,7 +2158,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of experience in biomedical waste management.",
               "Designed for safe disposal of used needles, syringes, and other sharps.",
               "Made from high-quality plastic ensuring puncture resistance and durability.",
               "Transparent design allows monitoring of sharps levels.",
@@ -2194,7 +2194,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -2235,7 +2235,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of expertise in biomedical waste management.",
               "Designed for safe disposal of medical sharps such as needles, syringes, lancets, and blades.",
               "Made from high-quality durable plastic ensuring puncture resistance.",
               "Medium-sized 10 Litre capacity ideal for hospital wards and laboratories.",
@@ -2271,7 +2271,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -2315,7 +2315,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of expertise in biomedical waste management.",
               "Designed for safe disposal of medical sharps including needles, syringes, and lancets.",
               "Made from durable plastic ensuring puncture resistance.",
               "Standard design suitable for high-traffic hospital wards and laboratories.",
@@ -2352,7 +2352,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -2393,7 +2393,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with over 30 years of expertise in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with over 50 years of expertise in biomedical waste management.",
               "Designed for safe disposal of medical sharps including needles, syringes, and lancets.",
               "Constructed from high-quality random polypropylene ensuring puncture resistance.",
               "Large 26-litre capacity ideal for hospital wards and laboratories.",
@@ -2429,7 +2429,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -2471,7 +2471,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer with decades of experience in biomedical waste management.",
               "Designed for safe collection and disposal of used needles, syringes, blades, and lancets.",
               "Made from high-quality puncture-resistant plastic.",
               "Rectangular shape allows efficient space utilization.",
@@ -2508,7 +2508,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [
@@ -2546,7 +2546,7 @@ export const category = [
           {
             type: "ul",
             items: [
-              "Manufactured by Sangam Industries, a trusted Sharp Container Manufacturer specializing in biomedical waste disposal.",
+              "Manufactured by Sangam Plastic Industries, a trusted Sharp Container Manufacturer specializing in biomedical waste disposal.",
               "Designed for safe disposal of used needles, syringes, lancets, and blades.",
               "Constructed from high-quality puncture-resistant plastic.",
               "Open-top structure allows quick disposal without hand contact.",
@@ -2585,7 +2585,7 @@ export const category = [
             ],
           },
 
-          { type: "h2", text: "Why Choose Sangam Industries" },
+          { type: "h2", text: "Why Choose Sangam Plastic Industries" },
           {
             type: "ul",
             items: [

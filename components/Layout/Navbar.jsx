@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
 import TranslateButton from "../GoogleTranslate";
-
+import Link from "next/link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -48,9 +48,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-25">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <Link href="/"
+         
             className="shrink-0"
           >
             <Image
@@ -63,7 +62,7 @@ const Navbar = () => {
             <p className="text-white md:text-[12px] font-semibold">
               Sangam Plastic Industries Pvt. Ltd.
             </p>
-          </motion.div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">

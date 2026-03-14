@@ -88,9 +88,9 @@ export const faqs = [
   {
     id: 1,
     question:
-      "What makes Sangam Industries a trusted Sharp Container Manufacturer?",
+      "What makes Sangam Plastic Industries a trusted Sharp Container Manufacturer?",
     answer:
-      "Sangam Industries is a leading Sharp Container Manufacturer in India, delivering puncture-resistant, leak-proof containers that comply with biomedical waste management standards. Our products are safe, durable, and used widely in hospitals, clinics, and laboratories.",
+      "Sangam Plastic Industries is a leading Sharp Container Manufacturer in India, delivering puncture-resistant, leak-proof containers that comply with biomedical waste management standards. Our products are safe, durable, and used widely in hospitals, clinics, and laboratories.",
   },
   {
     id: 2,
@@ -135,7 +135,7 @@ export const faqs = [
   {
     id: 8,
     question:
-      "How can I request a quote from Sangam Industries, a leading Sharp Container Manufacturer and Needle Destroyer Manufacturer?",
+      "How can I request a quote from Sangam Plastic Industries, a leading Sharp Container Manufacturer and Needle Destroyer Manufacturer?",
     answer:
       "You can contact us directly via phone, email, or WhatsApp, or fill out the inquiry form on our website. Our team will promptly provide a quote, product catalog, or customized solution for your biomedical waste management needs.",
   },
@@ -189,32 +189,32 @@ export const solutionSector = [
 export const testimonial = [
   {
     review:
-      "Sangam Industries provides top-quality sharp containers and needle destroyers. Their products are highly reliable, safe, and compliant with all biomedical waste regulations.",
+      "Sangam Plastic Industries provides top-quality sharp containers and needle destroyers. Their products are highly reliable, safe, and compliant with all biomedical waste regulations.",
     author: "Dr. Rajesh Mehta, Hospital Procurement Manager",
   },
   {
     review:
-      "We have been using Sangam Industries’ needle destroyers for years. They are easy to operate, durable, and have greatly improved safety in our facility.",
+      "We have been using Sangam Plastic Industries’ needle destroyers for years. They are easy to operate, durable, and have greatly improved safety in our facility.",
     author: "Anita Sharma, Laboratory Administrator",
   },
   {
     review:
-      "The team at Sangam Industries is professional and responsive. Their products meet our exact requirements, and delivery is always on time.",
+      "The team at Sangam Plastic Industries is professional and responsive. Their products meet our exact requirements, and delivery is always on time.",
     author: "Dr. Priya Kapoor, Clinic Operations Head",
   },
   {
     review:
-      "Outstanding quality and service! Sangam Industries provides innovative waste management solutions that have significantly improved our operational efficiency. Highly recommended for any healthcare facility.",
+      "Outstanding quality and service! Sangam Plastic Industries provides innovative waste management solutions that have significantly improved our operational efficiency. Highly recommended for any healthcare facility.",
     author: "Dr. Vikram Singh, Medical Director",
   },
   {
     review:
-      "Sangam Industries has helped us maintain hygiene and compliance across multiple hospital branches. Their sharp containers are sturdy and user-friendly.",
+      "Sangam Plastic Industries has helped us maintain hygiene and compliance across multiple hospital branches. Their sharp containers are sturdy and user-friendly.",
     author: "Ravi Khanna, Healthcare Facility Manager",
   },
   {
     review:
-      "Reliable products, excellent customer support, and competitive pricing. Sangam Industries is our go-to supplier for biomedical waste management solutions.",
+      "Reliable products, excellent customer support, and competitive pricing. Sangam Plastic Industries is our go-to supplier for biomedical waste management solutions.",
     author: "Sneha Verma, Hospital Safety Officer",
   },
 ];

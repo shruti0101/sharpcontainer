@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="space-y-6 text-lg text-gray-700 text-justify leading-relaxed">
           <p>
-            Established in 1988, <strong>Sangam Industries</strong> has grown
+            Established in 1988, <strong>Sangam Plastic Industries</strong> has grown
             into a trusted manufacturer, exporter, and supplier of biomedical
             waste management solutions across India. With decades of industry
             experience, we specialize in manufacturing sharp containers, needle
@@ -36,7 +36,7 @@ const About = () => {
           <p>
             Driven by innovation and guided by experienced leadership, we focus
             on delivering long-lasting, compliant, and customer-centric
-            solutions. At Sangam Industries, we are committed to supporting
+            solutions. At Sangam Plastic Industries, we are committed to supporting
             safer healthcare environments by providing reliable biomedical waste
             management products that healthcare professionals across India
             trust.
@@ -52,7 +52,7 @@ const About = () => {
           </p>
           <div className="space-y-6 text-lg text-gray-700 text-justify leading-relaxed">
             <p>
-              At <strong>Sangam Industries</strong>, our vision is to be
+              At <strong>Sangam Plastic Industries</strong>, our vision is to be
               recognized as one of India’s most trusted and innovative Sharp
               Container Manufacturer and Needle Destroyer Manufacturer,
               delivering safe, reliable, and compliant biomedical waste
@@ -160,7 +160,7 @@ const About = () => {
           Get in Touch
         </h2>
         <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 leading-relaxed opacity-95">
-          Partner with <strong>Sangam Industries</strong>, your trusted Sharp
+          Partner with <strong>Sangam Plastic Industries</strong>, your trusted Sharp
           Container Manufacturer, Needle Destroyer Manufacturer, and Puncture
           Proof Box Manufacturer. Whether you require bulk orders, customized
           biomedical waste solutions, or expert product guidance, our team is
