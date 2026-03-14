@@ -5,7 +5,7 @@ import {
   cirtificate,
   faqs,
   homeProductData,
-  slides,
+
   solutionSector,
   testimonial,
   otherproduct,
@@ -24,9 +24,10 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
-
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import PopForm from "@/components/PopForm";
 import "swiper/css";
 import axios from "axios";
 import About from "@/components/components/About";
@@ -41,7 +42,14 @@ const Home = () => {
 
   const slides = [
 
-
+{
+      image: "/image/home/banner3.webp",
+      mobileImage: "/mobile2.webp",
+      title: "Safe Sharps Disposal Starts Here",
+      subtitle: "High-quality sharp containers designed for healthcare safety.",
+      ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
+      ctaSecondary: { href: "/contact", label: "Contact Sales" },
+    },
     {
       image: "/image/home/banner2.webp",
       mobileImage: "/mobile1.webp",
@@ -54,14 +62,7 @@ const Home = () => {
 
 
 
-    {
-      image: "/image/home/banner3.webp",
-      mobileImage: "/mobile2.webp",
-      title: "Safe Sharps Disposal Starts Here",
-      subtitle: "High-quality sharp containers designed for healthcare safety.",
-      ctaPrimary: { href: "/contact?bulk=true", label: "Bulk Pricing" },
-      ctaSecondary: { href: "/contact", label: "Contact Sales" },
-    },
+    
     {
       image: "/image/home/banner1.webp",
       mobileImage: "/mob3.webp",
@@ -136,7 +137,7 @@ const Home = () => {
   }
 
 
-
+ const [open, setOpen] = useState(false);
 
 
 
@@ -256,8 +257,8 @@ const Home = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  mt-6">
-          {homeProductData.map(({ id, image, title, desc }) => (
-            <div
+          {homeProductData.map(({ id, image, title, desc,link }) => (
+            <Link href={link}
               className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
               key={id}
             >
@@ -279,7 +280,7 @@ const Home = () => {
                   View Details
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -335,9 +336,9 @@ const Home = () => {
               We prioritize infection control and workplace safety by designing
               products that help prevent needle-stick injuries.
             </p>
-            <button className="bg-[#0971CE] text-white font-bold px-5 py-2 mt-2 text-sm rounded-lg">
+            <Link href="/about" className="bg-[#0971CE] text-white font-bold px-5 py-2 mt-2 text-sm rounded-lg">
               Learn More About
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -515,13 +516,7 @@ const Home = () => {
               Contact Our Sales Team
             </a>
 
-            <a
-              href="/contact?bulk=true"
-              className="px-6 py-3 border border-white text-white rounded-xl font-semibold hover:bg-white hover:text-gray-900 transition-colors"
-              aria-label="Request bulk pricing"
-            >
-              Request Bulk Pricing
-            </a>
+       
           </div>
 
           <p className="mt-6 text-md opacity-90">
@@ -673,8 +668,8 @@ const Home = () => {
         </p> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  mt-6">
-          {otherproduct.map(({ id, image, title, desc }) => (
-            <div
+          {otherproduct.map(({ id, image, title, desc,link }) => (
+            <Link href={link}
               className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
               key={id}
             >
@@ -696,7 +691,7 @@ const Home = () => {
                   View Details
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -953,6 +948,8 @@ const Home = () => {
       </section>
 
       <Loactions />
+
+         <PopForm open={open} setOpen={setOpen} />
     </div>
   );
 };

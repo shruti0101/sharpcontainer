@@ -172,15 +172,10 @@ const About = () => {
             Take Action Today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <a
-              href="/contact"
-              className="px-8 py-3 bg-white text-[#0971CE] font-bold rounded-xl shadow-md hover:bg-gray-100 transition-all hover:-translate-y-1"
-            >
-              Request a Quote
-            </a>
+         
             <a
               href="/product"
-              className="px-8 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[#0971CE] transition-all hover:-translate-y-1"
+              className="px-8 py-3 border-2 bg-white text-black font-bold rounded-xl hover:bg-white hover:text-[#0971CE] transition-all hover:-translate-y-1"
             >
               Explore Products
             </a>

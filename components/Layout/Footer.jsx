@@ -25,6 +25,8 @@ const Footer = () => {
         { label: "Home", href: "/" },
         { label: "About Us", href: "/about" },
         { label: "Product", href: "/sharp-container" },
+        {label:"Needle Cutter", href:"/needle-cutter"},
+          {label:"Sharp Container", href:"/sharp-container"},
         { label: "Contact Us", href: "/contact" },
       ],
     },
@@ -207,7 +209,7 @@ const Footer = () => {
             className="text-center md:text-right text-sm text-gray-200 flex gap-2"
           >
             <p>
-              Website Designed By{" "}
+             Website Designed By Promozione Branding Pvt. Ltd. {" "}
               <a
                 href="https://promozionebranding.com"
                 className="hover:text-blue-200 transition font-bold"

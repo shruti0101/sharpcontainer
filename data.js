@@ -21,26 +21,30 @@ export const homeProductData = [
   {
     id: 1,
     image: "/image/sharp-container/1.5 Ltr (1)-Photoroom.webp",
-    title: "1.5 Ltr container ",
+    title: "1.5L Sharp container",
     desc: "Compact puncture-proof 1.5L sharp container designed for safe biomedical waste disposal",
+    link: "/sharp-container"
   },
   {
     id: 2,
     image: "/image/sharp-container/10 Ltr (1)-Photoroom.webp",
-    title: " 10 Ltr container ",
+    title: "Plastic 12L Sharp Containers",
     desc: "Heavy-duty puncture-proof 10L sharp container for safe biomedical waste disposal",
+    link: "/sharp-container"
   },
   {
     id: 3,
     image: "/image/needle-container/1 Litre Manual Needle Cutter.webp",
     title: "1 Litre Manual Needle Cutter",
     desc: "Manual operation enables safe and precise cutting of needles and syringe hubs.",
+    link: "/needle-cutter"
   },
   {
     id: 4,
     image: "/image/needle-container/Needle Cutter Range.webp",
     title: "Needle Cutter Range",
     desc: "Rectangular shape provides stability and efficient placement on industrial and laboratory workstations.",
+    link: "/needle-cutter"
   },
 ];
 
@@ -50,26 +54,35 @@ export const otherproduct = [
     image: "/other/Plastic-Dustbin.webp",
     title: "plastic dustbin",
     desc: "Sturdy and lightweight plastic dustbin suitable for everyday waste disposal and easy cleaning.",
+    link: "https://plasticdustbinmanufacturer.com/"
   },
   {
     id: 2,
     image: "/other/wringel.webp",
     title: "wringer trolley",
     desc: "Durable wringer trolley designed for efficient mopping and easy mobility in commercial and residential spaces.",
+    link: "https://wringertrolleymanufacturer.com/"
   },
   {
     id: 3,
     image: "/other/Garbage-Bag.webp",
     title: "garbage bag",
     desc: "Strong and leak-resistant garbage bag ideal for handling household or commercial waste safely.",
+    link: "https://garbagebagmanufacturer.in/"
   },
   {
     id: 4,
     image: "/other/palletnew.jpeg",
     title: "pallets",
     desc: "Heavy-duty pallets for storing and transporting goods securely in warehouses or industrial settings.",
+    link: "https://plasticdustbinmanufacturer.com/categories/plastic-pallets"
   },
 ];
+
+
+
+
+
 
 export const faqs = [
   {

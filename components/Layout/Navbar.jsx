@@ -23,15 +23,17 @@ const Navbar = () => {
       submenu: [
         { label: "Needle Cutter", href: "/needle-cutter" },
         { label: "Sharp Containers", href: "/sharp-container" },
+
+         {
+          label: "Plastic Dustbin",
+          href: "https://plasticdustbinmanufacturer.com",
+        },
         {
           label: "Wringer Trolley",
           href: "https://wringertrolleymanufacturer.com",
         },
         { label: "Garbage Bag", href: "https://garbagebagmanufacturer.in" },
-        {
-          label: "Plastic Dustbin",
-          href: "https://plasticdustbinmanufacturer.com",
-        },
+       
       ],
     },
     { label: "Blogs", href: "/blogs" },
@@ -42,7 +44,7 @@ const Navbar = () => {
 
     <>
     
-    <nav className="sticky top-0 z-50 bg-[#0971CE] shadow-lg">
+    <nav className="fixed w-full top-0 z-50 bg-[#0971CE] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-25">
           {/* Logo */}
@@ -58,7 +60,7 @@ const Navbar = () => {
               src={"/image/nav/logo.webp"}
               className="h-20 w-auto"
             />
-            <p className="text-white text-[12px] font-semibold">
+            <p className="text-white md:text-[12px] font-semibold">
               Sangam Plastic Industries Pvt. Ltd.
             </p>
           </motion.div>

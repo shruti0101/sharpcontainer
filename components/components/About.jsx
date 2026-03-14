@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import {
   Building2,
   Stethoscope,
@@ -8,6 +9,8 @@ import {
   Store,
   Warehouse,
 } from "lucide-react";
+
+import PopForm from "@/components/PopForm";
 import Addons from "./Addons";
 const About = () => {
   // who we work with data
@@ -39,6 +42,8 @@ const About = () => {
       icon: Warehouse,
     },
   ];
+
+ const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -81,13 +86,13 @@ const About = () => {
             </div>
 
             {/* CTA */}
-            <Link
-              href="/contact"
+            <button
+              onClick={() => setOpen((prev) => !prev)}
               className="mt-10 inline-flex items-center gap-2 px-7 py-3 text-base font-semibold text-white bg-[#0B2545] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Become a Bulk Procurement Partner
               <span className="text-lg">→</span>
-            </Link>
+            </button>
           </div>
 
           {/* RIGHT */}
@@ -147,6 +152,9 @@ With modern manufacturing facilities in Delhi, advanced machinery, and a skilled
           </Reveal>
         </div>
       </section> */}
+   <PopForm open={open} setOpen={setOpen} />
+
+
     </div>
   );
 };
