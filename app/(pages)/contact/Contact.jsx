@@ -113,7 +113,7 @@ const Contact = () => {
               </div>
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-                        <a href="tel:+919810316441">+91 98103 16441</a>
+                        <a href="tel:+919810316441">+91 98103 16441</a> <br />
             <a href="tel:+919810026034">+91 98100 26034</a>
           </motion.div>
 
