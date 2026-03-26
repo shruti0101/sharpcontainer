@@ -506,7 +506,7 @@ const Location = () => {
                     </div>
 
                     <div>
-                        <a href="tel:+919810026034" className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        <a href="tel:+919810057441" className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                             Connect Now
                         </a>
                     </div>

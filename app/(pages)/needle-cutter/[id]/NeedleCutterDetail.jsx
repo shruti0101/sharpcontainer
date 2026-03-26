@@ -97,7 +97,7 @@ const NeedleCutterDetail = ({ productId }) => {
             {/* CTA Buttons */}
             <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-3 sm:gap-4">
               <a
-                href="tel:9810316441"
+                href="tel:9810057441"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
@@ -106,7 +106,7 @@ const NeedleCutterDetail = ({ productId }) => {
               </a>
 
               <a
-                href="https://wa.link/bt3pf1"
+                href="https://wa.me/+919810057441"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition"
