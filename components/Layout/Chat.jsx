@@ -7,7 +7,7 @@ const Whatsapp = () => {
     <>
       {/* WhatsApp Floating Button (Right side) */}
       <a
-        href="https://wa.me/+919810057441"
+        href="https://wa.me/+918810422935"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp "
@@ -18,7 +18,7 @@ const Whatsapp = () => {
 
       {/* Call Floating Button (Left side) */}
       <a
-        href="tel:+919810057441"
+        href="tel:+918810422935"
         aria-label="Call us"
         className="fixed bottom-21 right-4 z-50 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition animate-bounce"
       >
