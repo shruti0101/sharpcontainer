@@ -13,7 +13,7 @@ import {
   X,
 } from "lucide-react";
 import Image from "next/image";
-
+import { usePathname } from "next/navigation";
 const Footer = () => {
   const [imageShow, setImageShow] = useState(false);
   const currentYear = new Date().getFullYear();
@@ -25,8 +25,8 @@ const Footer = () => {
         { label: "Home", href: "/" },
         { label: "About Us", href: "/about" },
         { label: "Product", href: "/sharp-container" },
-        {label:"Needle Cutter", href:"/needle-cutter"},
-          {label:"Sharp Container", href:"/sharp-container"},
+        { label: "Needle Cutter", href: "/needle-cutter" },
+        { label: "Sharp Container", href: "/sharp-container" },
         { label: "Contact Us", href: "/contact" },
       ],
     },
@@ -60,6 +60,10 @@ const Footer = () => {
     );
   }
 
+  const pathname = usePathname();
+  const adminLayout = pathname.startsWith("/admin")
+  if (adminLayout) return null;
+
   return (
     <footer className="bg-[#0971CE] text-white">
       {/* Main Footer Content */}
@@ -90,11 +94,11 @@ const Footer = () => {
           >
             <h3 className="text-2xl font-teko font-semibold">Contact Us</h3>
             <p className="text-gray-100 text-lg">
-             Office Address - 110, Satya Bhawan, 36 Community Center, Wazirpur
+              Office Address - 110, Satya Bhawan, 36 Community Center, Wazirpur
               Industrial Area, New Delhi-110052
             </p>
             <p className="text-gray-100 text-lg font-semibold">
-             Manufacturing Address Spread Across Delhi NCR
+              Manufacturing Address Spread Across Delhi NCR
             </p>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
@@ -209,7 +213,7 @@ const Footer = () => {
             className="text-center md:text-right text-sm text-gray-200 flex gap-2"
           >
             <p>
-             Website Designed By Promozione Branding Pvt. Ltd. {" "}
+              Website Designed By Promozione Branding Pvt. Ltd. {" "}
               <a
                 href="https://promozionebranding.com"
                 className="hover:text-blue-200 transition font-bold"
