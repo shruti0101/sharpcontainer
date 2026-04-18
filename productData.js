@@ -704,7 +704,7 @@ export const category = [
         ],
 
         image: {
-          src: "/image/needle-container/Stainless Steel Hub Cutter, For Hospital (1).webp",
+          src: "/image/needle-container/5.webp",
           alt: "Stainless Steel Hub Cutter For Hospital",
         },
       },
