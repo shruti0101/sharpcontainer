@@ -9,7 +9,7 @@ const SharpContainer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {category[1]?.products.map(({ id, productName, image }) => {
           return (
-            <Link href={`/needle-cutter/${id}`} key={id} className="group">
+            <Link href={`/sharp-container/${id}`} key={id} className="group">
               <div className="h-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
                 <div className="h-64 bg-gray-50 p-6 flex items-center justify-center relative">
                   <img
