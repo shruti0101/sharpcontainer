@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { category } from "@/productData";
+import { ChevronRight } from "lucide-react";
 
 const Sitemap = () => {
   const pages = [
@@ -69,40 +70,26 @@ const Sitemap = () => {
                 >
                   {category.label}
                 </Link>
-
-                {/* Products */}
-                <div className="space-y-2 max-h-[180px] overflow-y-auto pr-1 custom-scrollbar">
-                  {/* {category.map((product) => (
-                    <Link
-                      key={product.id}
-                      href={`/products/${product.id}`}
-                      className="flex items-center gap-2 text-sm text-gray-600 hover:text-red-600 transition"
-                    >
-                      <ChevronRight className="w-3 h-3 text-gray-400 group-hover:text-red-500" />
-                      <span className="truncate">{product.name}</span>
-                    </Link>
-                  ))} */}
-                </div>
               </div>
             ))}
           </div>
-          <div>
+          <div className="mt-4 space-y-2   pr-1 ">
             <h2 className="text-lg font-semibold text-gray-700 mb-6">
               Products
             </h2>
-            <div className="space-y-2 max-h-[180px] overflow-y-auto pr-1 custom-scrollbar">
-                  {/* {allProducts?.map((product) => (
-                    <Link
-                      key={product.id}
-                      href={`/products/${product.id}`}
-                      className="flex items-center gap-2 text-sm text-gray-600 hover:text-red-600 transition"
-                    >
-                      <ChevronRight className="w-3 h-3 text-gray-400 group-hover:text-red-500" />
-                      <span className="truncate">{product.productName}</span>
-                    </Link>
-                  ))} */}
-                </div>
 
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3   pr-2 custom-scrollbar">
+              {allProducts?.map((product, index) => (
+                <Link
+                  key={index}
+                  href={`/${product.category}/${product.id.toString()}`} // ✅ fix number issue too
+                  className="flex items-center gap-2 text-sm text-gray-600 hover:text-red-600 transition p-2 rounded-lg hover:bg-gray-50"
+                >
+                  <ChevronRight className="w-3 h-3 text-gray-400" />
+                  <span className="truncate">{product.productName}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

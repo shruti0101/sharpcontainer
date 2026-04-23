@@ -17,6 +17,7 @@ export const category = [
       {
         id: "500-ml-abs-hub-cutter-range",
         productName: "500 ML ABS Hub Cutter Range",
+        category:"needle-cutter",
         description: [
           {
             type: "h2",
@@ -108,6 +109,7 @@ export const category = [
    {
         id: "1l-hub-cutter-range",
         productName: "1L Hub Cutter Range",
+        category:"needle-cutter",
         description: [
           {
             type: "h2",
@@ -197,6 +199,7 @@ export const category = [
         {
         id: "1.1l-hub-cutter-range",
         productName: "1.1L Hub Cutter Range",
+        category:"needle-cutter",
         description: [
           {
             type: "h2",
@@ -286,7 +289,7 @@ export const category = [
   {
         id: "600ml-polywell-stainless-steel-needle-destroyer",
         productName: "600ml Polywell Stainless Steel Needle Destroyer",
-
+        category:"needle-cutter",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -344,7 +347,7 @@ export const category = [
          {
         id: "800ml-polywell-stainless-steel-needle-destroyer",
         productName: "800ml Polywell Stainless Steel Needle Destroyer",
-
+        category:"needle-cutter",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -407,7 +410,7 @@ export const category = [
            {
         id: "1-litre-manual-needle-cutter",
         productName: "1 Litre Manual Needle Cutter",
-
+        category:"needle-cutter",
         description: [
           {
             type: "h2",
@@ -492,7 +495,7 @@ export const category = [
       {
         id: "needle-cutter-range",
         productName: "Needle Cutter Range",
-
+        category:"needle-cutter",
         description: [
           {
             type: "h2",
@@ -597,7 +600,7 @@ export const category = [
       {
         id: "manual-needle-syringe-destroyer",
         productName: "Manual Needle Syringe Destroyer",
-
+        category:"needle-cutter",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -657,7 +660,7 @@ export const category = [
       {
         id: "stainless-steel-hub-cutter-for-hospital",
         productName: "Stainless Steel Hub Cutter, For Hospital",
-
+        category:"needle-cutter",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -731,7 +734,7 @@ export const category = [
    {
         id: "600ml-sharp-container",
         productName: "600 ML Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -806,7 +809,7 @@ export const category = [
       {
         id: "800ml-sharp-container",
         productName: "800 ML Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -881,7 +884,7 @@ export const category = [
       {
         id: "1l-sharp-container",
         productName: "1L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -957,7 +960,7 @@ export const category = [
       {
         id: "1.5l-sharp-container",
         productName: "1.5L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1036,7 +1039,7 @@ export const category = [
       {
         id: "3.5l-sharp-container",
         productName: "3.5L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1116,7 +1119,7 @@ export const category = [
   {
         id: "puncture-proof-box-container-5-ltr",
         productName: "Puncture-Proof Box Container (5 LTR)",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1197,7 +1200,7 @@ export const category = [
       {
         id: "6l-waste-sharp-container",
         productName: "6L Waste Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1274,7 +1277,7 @@ export const category = [
       {
         id: "plastic-biohazard-sharp-container-10l",
         productName: "Plastic Biohazard Sharp Container 10 L",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1354,7 +1357,7 @@ export const category = [
       {
         id: "plastic-12l-sharp-containers",
         productName: "Plastic 12L Sharp Containers",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1432,7 +1435,7 @@ export const category = [
       {
         id: "26l-disposable-random-polypropylene-sharp-container",
         productName: "26L Disposable Random Polypropylene Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1510,7 +1513,7 @@ export const category = [
       {
         id: "plastic-hospital-sharp-containers",
         productName: "Plastic Hospital Sharp Containers",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1585,7 +1588,7 @@ export const category = [
       {
         id: "plastic-sharp-disposal-containers",
         productName: "Plastic Sharp Disposal Containers",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2152,7 +2155,7 @@ export const category = [
       {
         id: "6l-waste-sharp-container",
         productName: "6L Waste Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2229,7 +2232,7 @@ export const category = [
       {
         id: "plastic-biohazard-sharp-container-10l",
         productName: "Plastic Biohazard Sharp Container 10 L",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2309,7 +2312,7 @@ export const category = [
       {
         id: "plastic-12l-sharp-containers",
         productName: "Plastic 12L Sharp Containers",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2387,7 +2390,7 @@ export const category = [
       {
         id: "26l-disposable-random-polypropylene-sharp-container",
         productName: "26L Disposable Random Polypropylene Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2465,7 +2468,7 @@ export const category = [
       {
         id: "plastic-hospital-sharp-containers",
         productName: "Plastic Hospital Sharp Containers",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2540,7 +2543,7 @@ export const category = [
       {
         id: "plastic-sharp-disposal-containers",
         productName: "Plastic Sharp Disposal Containers",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
