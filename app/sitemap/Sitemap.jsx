@@ -16,8 +16,9 @@ const Sitemap = () => {
     { label: "Sharp Containers", path: "/sharp-container" },
   ];
 
-  const allProducts = category.flatMap((cat) => cat.products);
-  console.log(allProducts);
+  const Products = category.flatMap((cat) => cat.products);
+  const AllProducts = Products.flatMap((pro) => pro);
+
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen py-16 px-4 sm:px-10 ">
@@ -79,10 +80,10 @@ const Sitemap = () => {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3   pr-2 custom-scrollbar">
-              {allProducts?.map((product, index) => (
+              {AllProducts?.map((product, index) => (
                 <Link
                   key={index}
-                  href={`/${product.category}/${product.id.toString()}`} // ✅ fix number issue too
+                  href={`/${product.category}/${product.id.toString()}`} 
                   className="flex items-center gap-2 text-sm text-gray-600 hover:text-red-600 transition p-2 rounded-lg hover:bg-gray-50"
                 >
                   <ChevronRight className="w-3 h-3 text-gray-400" />

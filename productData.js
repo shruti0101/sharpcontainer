@@ -1689,7 +1689,7 @@ export const category = [
    {
         id: "600ml-sharp-container",
         productName: "600 ML Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1764,7 +1764,7 @@ export const category = [
       {
         id: "0.800l-sharp-container",
         productName: "0.800 L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1839,7 +1839,7 @@ export const category = [
       {
         id: "1l-sharp-container",
         productName: "1L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1915,7 +1915,7 @@ export const category = [
       {
         id: "1.5l-sharp-container",
         productName: "1.5L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -1994,7 +1994,7 @@ export const category = [
       {
         id: "3.5l-sharp-container",
         productName: "3.5L Sharp Container",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
@@ -2074,7 +2074,7 @@ export const category = [
   {
         id: "puncture-proof-box-container-5-ltr",
         productName: "Puncture-Proof Box Container 5 LTR)",
-
+        category:"sharp-container",
         description: [
           { type: "h2", text: "Product Overview" },
           {
