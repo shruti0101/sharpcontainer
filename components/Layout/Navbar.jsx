@@ -15,6 +15,14 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const translateToHindi = () => {
+    const select = document.querySelector(".goog-te-combo");
+    if (select) {
+      select.value = "hi";
+      select.dispatchEvent(new Event("change"));
+    }
+  };
+
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -34,7 +42,6 @@ const Navbar = () => {
           href: "https://wringertrolleymanufacturer.com",
         },
         { label: "Garbage Bag", href: "https://garbagebagmanufacturer.in" },
-
       ],
     },
     { label: "Blogs", href: "/blogs" },
@@ -42,21 +49,16 @@ const Navbar = () => {
   ];
 
   const pathname = usePathname();
-  const adminLayout = pathname.startsWith("/admin")
+  const adminLayout = pathname.startsWith("/admin");
   if (adminLayout) return null;
 
   return (
-
     <>
-
-      <nav className="sticky top-0 z-50 bg-[#0971CE] shadow-lg">
+      <nav className="sticky top-0 z-50 py-2 bg-[#0971CE] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-25">
             {/* Logo */}
-            <Link href="/"
-
-              className="shrink-0"
-            >
+            <Link href="/" className="shrink-0">
               <Image
                 width={1000}
                 height={1000}
@@ -75,7 +77,9 @@ const Navbar = () => {
                 <div
                   key={item.label}
                   className="relative group"
-                  onMouseEnter={() => item.submenu && setOpenDropdown(item.label)}
+                  onMouseEnter={() =>
+                    item.submenu && setOpenDropdown(item.label)
+                  }
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <motion.a
@@ -140,18 +144,31 @@ const Navbar = () => {
                 alt="gem"
                 className="w-auto h-18 rounded-xl p-1"
               />
+              <button
+              onClick={translateToHindi}
+              className=" text-white font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-3 py-1 rounded-md"
+            >
+              हिंदी में देखें
+            </button>
             </div>
+            
 
             {/* Mobile menu button */}
             <motion.button
               onClick={toggleMenu}
-              className="md:hidden p-2 rounded-lg transition-colors"
+              className="md:hidden p-2 rounded-lg flex  flex-col justify-center items-end gap-3 transition-colors"
               whileTap={{ scale: 0.95 }}
             >
+              <button
+              onClick={translateToHindi}
+              className=" text-white font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-3 py-2 rounded-md"
+            >
+              हिंदी में देखें
+            </button>
               {isOpen ? (
-                <X size={24} className="text-white" />
+                <X size={28} className="text-white" />
               ) : (
-                <Menu size={24} className="text-white" />
+                <Menu size={28} className="text-white" />
               )}
             </motion.button>
           </div>
@@ -188,7 +205,9 @@ const Navbar = () => {
                               onClick={(e) => {
                                 e.preventDefault();
                                 setOpenDropdown(
-                                  openDropdown === item.label ? null : item.label,
+                                  openDropdown === item.label
+                                    ? null
+                                    : item.label,
                                 );
                               }}
                             >

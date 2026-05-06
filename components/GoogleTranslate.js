@@ -23,13 +23,7 @@ export default function TranslateButton() {
     document.body.appendChild(script);
   }, []);
 
-  const translateToHindi = () => {
-    const select = document.querySelector(".goog-te-combo");
-    if (select) {
-      select.value = "hi";
-      select.dispatchEvent(new Event("change"));
-    }
-  };
+ 
 
   return (
     <>
@@ -37,12 +31,7 @@ export default function TranslateButton() {
       <div id="google_translate_element" style={{ display: "none" }}></div>
 
       {/* your button */}
-      <button
-        onClick={translateToHindi}
-        className="absolute text-white font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-3 py-2 rounded-md"
-      >
-        हिंदी में देखें
-      </button>
+      
     </>
   );
 }

@@ -100,7 +100,7 @@ const NeedleCutterDetail = ({ productId }) => {
                 href="tel:8810422935"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+                className="w-full sm:w-auto bg-blue-600 text-center hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
               >
                 Call Now
               </a>
@@ -109,7 +109,7 @@ const NeedleCutterDetail = ({ productId }) => {
                 href="https://wa.me/+918810422935"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition"
+                className="w-full sm:w-auto text-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition"
               >
                 WhatsApp Us
               </a>
