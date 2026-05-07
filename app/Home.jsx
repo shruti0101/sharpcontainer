@@ -330,13 +330,13 @@ const Home = () => {
             <p className="text-lg text-black md:text-2xl">
               Designed for Safety & Hygiene
             </p>
-            <p className="text-sm font-medium text-gray-500 md:text-lg">
+            <p className="text-sm font-medium pb-2 text-gray-500 md:text-lg">
               We prioritize infection control and workplace safety by designing
               products that help prevent needle-stick injuries.
             </p>
             <Link
               href="/about"
-              className="bg-[#0971CE] text-white font-bold px-5 py-2 mt-2 text-sm rounded-lg"
+              className="bg-[#0971CE] text-white font-bold px-5 py-2 mt-2  text-sm rounded-lg"
             >
               Learn More About
             </Link>
