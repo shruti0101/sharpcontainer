@@ -386,7 +386,8 @@ const Home = () => {
             </div>
           </div>
 
-          <p className="mt-10 md:mt-4   text-xl font-semibold text-white md:pb-5">
+          <p className="mt-10 md:mt-4
+             text-xl font-semibold text-white md:pb-5">
             Our sharp containers are suitable for hospitals, clinics,
             laboratories, and healthcare facilities, ensuring safe biomedical
             waste handling and reduced risk of needle-stick injuries.

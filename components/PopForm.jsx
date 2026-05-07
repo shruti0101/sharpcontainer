@@ -2,13 +2,15 @@
 import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { homeProductData } from "@/data";
 
 const PopForm = ({ open, setOpen }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
+    product: "",
   });
   const [loading, setLoading] = useState(false);
 
@@ -22,7 +24,7 @@ const PopForm = ({ open, setOpen }) => {
       name: formData.name,
       phone: formData.phone,
       email: formData.email,
-      product: "Na",
+      product: formData.product,
       place: "Na",
       message: formData.message,
     };
@@ -40,6 +42,7 @@ const PopForm = ({ open, setOpen }) => {
         email: "",
         phone: "",
         message: "",
+        product: "",
       });
       toast.success("Message sent successfully!");
     } catch (error) {
@@ -84,6 +87,7 @@ const PopForm = ({ open, setOpen }) => {
               Name
             </label>
             <input
+            required
               value={formData.name}
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, name: e.target.value }))
@@ -131,6 +135,36 @@ const PopForm = ({ open, setOpen }) => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
               placeholder="Phone no"
             />
+          </div>
+          <div>
+            <label
+              htmlFor="product"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Product
+            </label>
+
+            <select
+              id="product"
+              value={formData.product}
+              onChange={(e) =>
+                setFormData((prev) => ({
+                  ...prev,
+                  product: e.target.value,
+                }))
+              }
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+            >
+              <option value="">Select Product</option>
+
+              {homeProductData.map(({ id, title }) => (
+                <option key={id} value={title}>
+                  {title}
+                </option>
+              ))}
+
+              <option value="all">All Products</option>
+            </select>
           </div>
 
           <div>
