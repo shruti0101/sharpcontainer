@@ -28,7 +28,7 @@ const Navbar = () => {
     { label: "About", href: "/about" },
     {
       label: "Product",
-      href: "",
+      
       submenu: [
         { label: "Needle Cutter", href: "/needle-cutter" },
         { label: "Sharp Containers", href: "/sharp-container" },
@@ -154,23 +154,26 @@ const Navbar = () => {
             
 
             {/* Mobile menu button */}
+            <div className="flex flex-col">
+              <button
+              onClick={translateToHindi}
+              className=" text-white md:hidden whitespace-nowrap font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-3 py-2 rounded-md"
+            >
+              हिंदी में देखें
+            </button>
             <motion.button
               onClick={toggleMenu}
               className="md:hidden p-2 rounded-lg flex  flex-col justify-center items-end gap-3 transition-colors"
               whileTap={{ scale: 0.95 }}
             >
-              <button
-              onClick={translateToHindi}
-              className=" text-white font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-3 py-2 rounded-md"
-            >
-              हिंदी में देखें
-            </button>
+              
               {isOpen ? (
                 <X size={28} className="text-white" />
               ) : (
                 <Menu size={28} className="text-white" />
               )}
             </motion.button>
+          </div>
           </div>
 
           {/* Mobile Menu */}

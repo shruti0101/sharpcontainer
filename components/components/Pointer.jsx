@@ -48,11 +48,11 @@ export default function PolywellTrustStatsSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-14"
+          className="text-center mb-6 md:mb-14"
         >
          
 
-          <h2 className="text-[22px] sm:text-[26px] md:text-[40px] font-semibold text-[#0B2545]">
+          <h2 className="text-[25px]  md:text-[40px] font-bold text-[#0B2545]">
             Why Government & Institutional Buyers Trust Polywell
           </h2>
 
@@ -62,7 +62,7 @@ export default function PolywellTrustStatsSection() {
         </motion.div>
 
         {/* MAIN STRUCTURE */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-10 items-start">
 
           {/* LEFT KPI PANEL */}
           <div className="space-y-6 ">

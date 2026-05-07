@@ -68,7 +68,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0971CE] text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
 
@@ -78,7 +78,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-teko font-semibold">About Us</h3>
+            <h3 className="text-3xl md:text-2xl font-teko font-semibold">About Us</h3>
             <p className="text-gray-100 text-lg">
               Established in 1988, Sangam Plastic Industries Private Limited has
               been a leading Garbage Bag Manufacturer, specializing in the
@@ -94,7 +94,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-teko font-semibold">Contact Us</h3>
+            <h3 className="text-3xl md:text-2xl font-teko font-semibold">Contact Us</h3>
             <p className="text-gray-100 text-lg">
               Office Address - 110, Satya Bhawan, 36 Community Center, Wazirpur
               Industrial Area, New Delhi-110052
@@ -142,7 +142,7 @@ const Footer = () => {
               transition={{ duration: 0.5, delay: (index + 1) * 0.1 }}
               className="space-y-4"
             >
-              <h4 className="font-teko font-semibold text-2xl">
+              <h4 className="font-teko text-3xl md:text-2xl font-semibold text-2xl">
                 {section.title}
               </h4>
               <ul className="space-y-2">
@@ -165,9 +165,9 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-4"
+            className="space-y-4 "
           >
-            <h3 className="text-2xl font-teko font-semibold">
+            <h3 className="text-3xl md:text-2xl font-teko font-semibold">
               Trust Elite Certificate
             </h3>
             <p className="text-gray-100 text-lg">
@@ -184,7 +184,7 @@ const Footer = () => {
               width={1000}
               height={1000}
               alt="TRUST-ELITE"
-              className="h-20 lg:h-30 w-auto cursor-pointer"
+              className="h-30 lg:h-30 w-auto cursor-pointer"
             />
           </motion.div>
         </div>

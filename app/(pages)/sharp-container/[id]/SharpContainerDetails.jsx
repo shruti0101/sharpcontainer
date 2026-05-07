@@ -32,7 +32,7 @@ const SharpContainerDetails = ({ productId }) => {
           return (
             <h2
               key={index}
-              className="text-2xl md:text-3xl font-bold text-blue-700 mt-10 mb-4 border-b pb-2"
+              className="text-2xl md:text-3xl font-bold text-blue-700 mt-3 mb-4 border-b pb-2"
             >
               {part.text}
             </h2>

@@ -6,21 +6,21 @@ const About = () => {
   return (
     <div className="px-4 md:px-10 lg:px-20 py-10 md:mt-10">
       <section className="max-w-6xl mx-auto">
-        <p className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-teko mb-8">
+        <p className="text-center font-bold text-4xl md:text-4xl lg:text-5xl font-teko mb-8">
           Committed to Safe Biomedical Waste Solutions Since 1988
         </p>
 
-        <div className="space-y-6 text-lg text-gray-700 text-justify leading-relaxed">
+        <div className="space-y-6 text-lg text-gray-700 text-justify ">
           <p>
-            Established in 1988, <strong>Sangam Plastic Industries</strong> has grown
-            into a trusted manufacturer, exporter, and supplier of biomedical
-            waste management solutions across India. With decades of industry
-            experience, we specialize in manufacturing sharp containers, needle
-            destroyers, puncture-proof boxes, and biomedical waste disposal
-            products that meet stringent safety and regulatory standards. Our
-            commitment to quality and reliability has earned us recognition as a
-            dependable Sharp Container Manufacturer and Needle Destroyer
-            Manufacturer serving the healthcare sector.
+            Established in 1988, <strong>Sangam Plastic Industries</strong> has
+            grown into a trusted manufacturer, exporter, and supplier of
+            biomedical waste management solutions across India. With decades of
+            industry experience, we specialize in manufacturing sharp
+            containers, needle destroyers, puncture-proof boxes, and biomedical
+            waste disposal products that meet stringent safety and regulatory
+            standards. Our commitment to quality and reliability has earned us
+            recognition as a dependable Sharp Container Manufacturer and Needle
+            Destroyer Manufacturer serving the healthcare sector.
           </p>
 
           <p>
@@ -36,18 +36,18 @@ const About = () => {
           <p>
             Driven by innovation and guided by experienced leadership, we focus
             on delivering long-lasting, compliant, and customer-centric
-            solutions. At Sangam Plastic Industries, we are committed to supporting
-            safer healthcare environments by providing reliable biomedical waste
-            management products that healthcare professionals across India
-            trust.
+            solutions. At Sangam Plastic Industries, we are committed to
+            supporting safer healthcare environments by providing reliable
+            biomedical waste management products that healthcare professionals
+            across India trust.
           </p>
         </div>
       </section>
 
       {/* Our Vision */}
-      <section className="max-w-6xl mx-auto mt-16 flex flex-col md:flex-row items-center gap-10">
+      <section className="max-w-6xl mx-auto mt-15 md:mt-10 flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2">
-          <p className="text-3xl md:text-4xl font-bold font-teko text-[#0971CE] mb-6">
+          <p className="text-3xl md:text-4xl font-bold font-teko text-[#0971CE] mb-5">
             Our Vision
           </p>
           <div className="space-y-6 text-lg text-gray-700 text-justify leading-relaxed">
@@ -83,13 +83,13 @@ const About = () => {
       </section>
 
       {/* Our mission */}
-      <section className="max-w-6xl mx-auto my-8 md:my-12">
+      <section className="max-w-6xl mx-auto my-10 md:my-12">
         <p className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-teko mb-2">
           Committed to Safe Biomedical Waste Solutions Since 1988
         </p>
 
-        <div className="space-y-6 text-lg text-gray-700 text-justify leading-relaxed">
-          <p className="lg:text-center">
+        <div className="space-y-6 text-lg text-gray-700 text-justify ">
+          <p className="leading-5 md:leading-7 mt-2 lg:text-center">
             Our mission guides every decision at{" "}
             <strong>Sangam Plastic Industries Pvt. Ltd.</strong> We are
             committed to
@@ -100,15 +100,17 @@ const About = () => {
               return (
                 <div
                   key={title}
-                  className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                  className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-1 h-full flex flex-col"
                 >
-                  <div className="mb-4 inline-block p-3 bg-[#0971CE]/10 rounded-lg text-[#0971CE]">
+                  <div className="md:mb-4 mb-3  inline-block p-3 bg-[#0971CE]/10 rounded-lg text-[#0971CE] w-fit">
                     <Icon size={32} />
                   </div>
-                  <p className="text-xl font-bold text-[#0971CE] mb-3 font-teko uppercase tracking-wide">
+
+                  <p className="text-xl font-bold text-[#0971CE] mb-3 text-start  uppercase min-h-[60px]">
                     {title}
                   </p>
-                  <p className="text-gray-600 text-base leading-relaxed text-left">
+
+                  <p className="text-gray-600 text-base leading-relaxed text-left flex-1">
                     {desc}
                   </p>
                 </div>
@@ -120,25 +122,25 @@ const About = () => {
 
       {/* Our Core value */}
       <section className="max-w-6xl mx-auto my-8 md:my-12">
-        <p className="text-center font-bold text-3xl md:text-4xl lg:text-5xl font-teko mb-2">
+        <p className="text-center font-bold text-4xl md:text-4xl lg:text-5xl font-teko mb-2">
           Our Core Values
         </p>
 
-        <div className="space-y-6 text-lg text-gray-700 text-justify leading-relaxed">
-          <p className="lg:text-center">
+        <div className="space-y-6 text-lg  text-gray-700  leading-6">
+          <p className="lg:text-center text-center">
             Our core values define who we are at{" "}
             <strong>Sangam Plastic Industries Pvt. Ltd.</strong> and guide our
             actions every day
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:mt-6">
             {OurCoreValue.map(({ title, desc, icon: Icon }) => {
               return (
                 <div
                   key={title}
                   className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="mb-4 inline-block p-3 bg-[#0971CE]/10 rounded-lg text-[#0971CE]">
+                  <div className="mb-3 md:mb-4 inline-block p-3 bg-[#0971CE]/10 rounded-lg text-[#0971CE]">
                     <Icon size={32} />
                   </div>
                   <p className="text-xl font-bold text-[#0971CE] mb-3 font-teko uppercase text-left">
@@ -155,16 +157,16 @@ const About = () => {
       </section>
 
       {/* get in touch  */}
-      <section className="mt-16 bg-gradient-to-r from-[#0971CE] to-[#2e86f9] text-white rounded-2xl p-8 md:p-12 text-center shadow-xl">
+      <section className=" md:mt-16 bg-gradient-to-r from-[#0971CE] to-[#2e86f9] text-white rounded-2xl p-6 md:p-12 text-center shadow-xl">
         <h2 className="text-3xl md:text-5xl font-bold font-teko mb-6">
           Get in Touch
         </h2>
         <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 leading-relaxed opacity-95">
-          Partner with <strong>Sangam Plastic Industries</strong>, your trusted Sharp
-          Container Manufacturer, Needle Destroyer Manufacturer, and Puncture
-          Proof Box Manufacturer. Whether you require bulk orders, customized
-          biomedical waste solutions, or expert product guidance, our team is
-          ready to support your healthcare safety needs.
+          Partner with <strong>Sangam Plastic Industries</strong>, your trusted
+          Sharp Container Manufacturer, Needle Destroyer Manufacturer, and
+          Puncture Proof Box Manufacturer. Whether you require bulk orders,
+          customized biomedical waste solutions, or expert product guidance, our
+          team is ready to support your healthcare safety needs.
         </p>
 
         <div className="flex flex-col items-center">
@@ -172,7 +174,6 @@ const About = () => {
             Take Action Today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-         
             <a
               href="/product"
               className="px-8 py-3 border-2 bg-white text-black font-bold rounded-xl hover:bg-white hover:text-[#0971CE] transition-all hover:-translate-y-1"

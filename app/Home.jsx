@@ -5,7 +5,6 @@ import {
   cirtificate,
   faqs,
   homeProductData,
-
   solutionSector,
   testimonial,
   otherproduct,
@@ -35,14 +34,8 @@ import PolywellTrustStatsSection from "@/components/components/Pointer";
 import Loactions from "@/components/Loactions";
 
 const Home = () => {
-
-
-
-
-
   const slides = [
-
-{
+    {
       image: "/image/home/banner3.webp",
       mobileImage: "/mobile2.webp",
       title: "Safe Sharps Disposal Starts Here",
@@ -60,9 +53,6 @@ const Home = () => {
       ctaSecondary: { href: "/contact", label: "Request Quote" },
     },
 
-
-
-    
     {
       image: "/image/home/banner1.webp",
       mobileImage: "/mob3.webp",
@@ -72,7 +62,6 @@ const Home = () => {
       ctaSecondary: { href: "/contact", label: "Contact Us" },
     },
 
-
     // {
     //   image: "/image/home/banner4.jpg",
     //   title: "Designed for Safety. Built for Compliance.",
@@ -81,7 +70,6 @@ const Home = () => {
     //   ctaSecondary: { href: "/contact", label: "Contact Sales" },
     // },
   ];
-
 
   const [openFAQ, setOpenFAQ] = useState(null);
   const [formData, setFormData] = useState({
@@ -136,11 +124,7 @@ const Home = () => {
     }
   }
 
-
- const [open, setOpen] = useState(false);
-
-
-
+  const [open, setOpen] = useState(false);
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -154,7 +138,6 @@ const Home = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   return (
     <div className="">
@@ -184,7 +167,9 @@ const Home = () => {
             className="absolute inset-0"
           >
             <Image
-              src={isMobile ? slides[current].mobileImage : slides[current].image}
+              src={
+                isMobile ? slides[current].mobileImage : slides[current].image
+              }
               alt={slides[current].title}
               fill
               priority
@@ -226,8 +211,9 @@ const Home = () => {
               key={i}
               onClick={() => setCurrent(i)}
               aria-label={`Go to slide ${i + 1}`}
-              className={`w-3 h-2 rounded-full transition-all ${i === current ? "bg-white" : "bg-white/40"
-                }`}
+              className={`w-3 h-2 rounded-full transition-all ${
+                i === current ? "bg-white" : "bg-white/40"
+              }`}
             />
           ))}
         </div>
@@ -239,11 +225,9 @@ const Home = () => {
       {/* pointer  */}
       <PolywellTrustStatsSection />
 
-
-
       {/* product section  */}
-      <section className="py-5 px-2 md:px-10 lg:px-20">
-        <p className="font-bold text-3xl text-center py-6">
+      <section className=" px-2 md:px-10 lg:px-20">
+        <p className="font-bold text-3xl md:text-4xl text-center py-6">
           Reliable Biomedical Waste Management Solutions
         </p>
         <p className="text-center text-lg pb  -4">
@@ -256,48 +240,51 @@ const Home = () => {
           hygiene, and regulatory compliance in healthcare environments.
         </p>
 
-   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
-  {homeProductData.map(({ id, image, title, desc, link }) => (
-    <Link
-      href={link}
-      key={id}
-      className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
-    >
-      <div className="relative h-83 w-full overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          width={1000}
-          height={1000}
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-      </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
+          {homeProductData.map(({ id, image, title, desc, link }) => (
+            <Link
+              href={link}
+              key={id}
+              className="group flex flex-col h-full bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="relative md:h-95 w-full overflow-hidden flex-shrink-0">
+                <Image
+                  src={image}
+                  alt={title}
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
 
-      <div className="p-6">
-        <h3 className="text-2xl capitalize text-center font-bold text-gray-900">
-          {title}
-        </h3>
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-2xl capitalize text-center font-bold text-gray-900">
+                  {title}
+                </h3>
 
-        <p className="py-3 text-black text-center">{desc}</p>
+                <p className="py-3 text-black text-center flex-1">{desc}</p>
 
-        <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors">
-          View Details
-        </button>
-      </div>
-    </Link>
-  ))}
-</div>
+                <button className="w-full py-3 px-4 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors mt-auto">
+                  View Details
+                </button>
+              </div>
+            </Link>
+          ))}
+        </div>
 
-{/* CENTER BUTTON */}
-<div className="flex justify-center mt-10">
-  <Link href="/sharp-container" className="py-3 px-8 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors text-xl">
-    All Products
-  </Link>
-</div>
+        {/* CENTER BUTTON */}
+        <div className="flex justify-center my-6">
+          <Link
+            href="/sharp-container"
+            className="py-3 px-8 bg-[#0971CE] text-white rounded-xl font-medium hover:bg-gray-800 transition-colors text-xl"
+          >
+            All Products
+          </Link>
+        </div>
       </section>
 
       {/* second section  */}
-      <section className="py-5 blueprint-bg bg-white px-2 md:px-10 lg:px-20 md:py-10 lg:py-20">
+      <section className="py-5 blueprint-bg bg-white px-2 md:px-20  md:py-6 lg:py-9">
         <h2 className="text-center font-bold text-2xl md:text-[45px]  font-teko text-black">
           Your Trusted Sharp Container & Needle Destroyer Manufacturer Since
           1988
@@ -347,7 +334,10 @@ const Home = () => {
               We prioritize infection control and workplace safety by designing
               products that help prevent needle-stick injuries.
             </p>
-            <Link href="/about" className="bg-[#0971CE] text-white font-bold px-5 py-2 mt-2 text-sm rounded-lg">
+            <Link
+              href="/about"
+              className="bg-[#0971CE] text-white font-bold px-5 py-2 mt-2 text-sm rounded-lg"
+            >
               Learn More About
             </Link>
           </div>
@@ -355,26 +345,27 @@ const Home = () => {
 
         <div className="bg-[#0971CE] px-4 py-6 md:px-10 lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:gap-5">
           <div>
-            <p className="font-bold text-white text-3xl md:text-4xl mb-3 font-teko">
+            <p className="font-bold text-white text-4xl md:text-5xl mb-3 font-teko">
               Pharmaceutical Companies
             </p>
-            <p className="text-white text-2xl font-medium pr-2 pl-2 md:p-0">
+            <p className="text-white text-xl font-medium pr-2 pl-2 md:p-0">
               Our waste management products help pharmaceutical companies
               maintain clean
             </p>
           </div>
 
-          <div className="mt-5 flex flex-col gap-7 lg:flex-row">
-            <div className="flex flex-col gap-3">
+          <div className="mt-5 flex flex-col gap-7 text-center md:text-start lg:flex-row">
+            <div className="flex flex-col items-center md:items-start gap-3">
               <LockKeyhole color="white" size={45} />
               <span className="text-3xl text-white font-bold font-teko md:text-4xl">
                 6.5K+
               </span>
-              <p className="text-lg font-medium text-white ">
+              <p className="text-lg font-medium text-white">
                 Polywell collection receptacles in Market
               </p>
             </div>
-            <div className="flex flex-col gap-3">
+
+            <div className="flex flex-col items-center md:items-start gap-3">
               <Package color="white" size={45} />
               <span className="text-3xl text-white font-bold font-teko md:text-4xl">
                 100K+
@@ -383,7 +374,8 @@ const Home = () => {
                 Polywell patented inner liners return for destruction.
               </p>
             </div>
-            <div className="flex flex-col gap-3">
+
+            <div className="flex flex-col items-center md:items-start gap-3">
               <FlaskConical color="white" size={45} />
               <span className="text-3xl text-white font-bold font-teko md:text-4xl">
                 6.5K+
@@ -394,7 +386,7 @@ const Home = () => {
             </div>
           </div>
 
-          <p className="mt-4  text-xl font-semibold text-white md:pb-5">
+          <p className="mt-10 md:mt-4   text-xl font-semibold text-white md:pb-5">
             Our sharp containers are suitable for hospitals, clinics,
             laboratories, and healthcare facilities, ensuring safe biomedical
             waste handling and reduced risk of needle-stick injuries.
@@ -403,14 +395,14 @@ const Home = () => {
       </section>
 
       {/* why health leader trust  */}
-      <section className="py-15 blueprint-bg bg-gray-50 rounded-2xl px-2 md:px-10 lg:px-20">
+      <section className="py-7 md:py-12 blueprint-bg bg-gray-50 rounded-2xl px-2 md:px-10 lg:px-20">
         <h3 className="text-2xl md:text-5xl font-bold text-black text-center mb-10 font-teko ">
           Why Healthcare Leaders Trust Sangam Plastic Industries
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div className="grid grid-cols-1 px-3 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <div className="flex gap-4">
-            <div className="p-3 bg-[#0971CE] text-white rounded-lg">
+            <div className="p-3 bg-[#0971CE] h-fit text-white rounded-lg">
               <Clock size={24} />
             </div>
             <div>
@@ -426,7 +418,7 @@ const Home = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="p-3 bg-[#0971CE] text-white rounded-lg">
+            <div className="p-3 bg-[#0971CE] h-fit text-white rounded-lg">
               <ShieldCheck size={24} />
             </div>
             <div>
@@ -442,7 +434,7 @@ const Home = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="p-3 bg-[#0971CE] text-white rounded-lg">
+            <div className="p-3 bg-[#0971CE] h-fit text-white rounded-lg">
               <Factory size={24} />
             </div>
             <div>
@@ -458,7 +450,7 @@ const Home = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="p-3 bg-[#0971CE] text-white rounded-lg">
+            <div className="p-3 bg-[#0971CE] h-fit text-white rounded-lg">
               <Stethoscope size={24} />
             </div>
             <div>
@@ -474,7 +466,7 @@ const Home = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="p-3 bg-[#0971CE] text-white rounded-lg">
+            <div className="p-3 bg-[#0971CE] h-fit text-white rounded-lg">
               <SlidersHorizontal size={24} />
             </div>
             <div>
@@ -490,7 +482,7 @@ const Home = () => {
           </div>
 
           <div className="flex gap-4 ">
-            <div className="p-3 bg-[#0971CE] text-white rounded-lg">
+            <div className="p-3 bg-[#0971CE] h-fit text-white rounded-lg">
               <Truck size={24} />
             </div>
             <div className="">
@@ -507,7 +499,7 @@ const Home = () => {
       </section>
 
       {/* cta  */}
-      <section className="py-12 mt-8 bg-gradient-to-r from-[#0971CE] to-[#2e86f9] text-white rounded-2xl mx-2 p-8 lg:mx-10">
+      <section className=" md:py-12 mt-8 bg-gradient-to-r from-[#0971CE] to-[#2e86f9] text-white rounded-2xl mx-2 p-8 lg:mx-10">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl md:text-3xl font-bold">
             Need Bulk Supply for Hospitals or Healthcare Facilities?
@@ -526,8 +518,6 @@ const Home = () => {
             >
               Contact Our Sales Team
             </a>
-
-       
           </div>
 
           <p className="mt-6 text-md opacity-90">
@@ -537,7 +527,7 @@ const Home = () => {
       </section>
 
       {/* supporting multiple  */}
-      <section className="py-5 md:py-10 px-2 md:px-10 lg:px-20">
+      <section className="py-5 mt-3 md:mt-0 md:py-10 px-2 md:px-10 lg:px-20">
         <h3 className="text-2xl md:text-5xl font-bold text-center font-teko">
           Supporting Multiple Sectors with Safe Waste Solutions
         </h3>
@@ -555,13 +545,13 @@ const Home = () => {
           hazardous waste disposal.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-3 lg:grid-cols-2 gap-6 mt-8">
           {solutionSector.map(({ icon: IconComponent, title, description }) => (
             <div
               key={title}
               className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-shadow"
             >
-              <div className="p-4 bg-[#0971CE] text-white rounded-lg shrink-0">
+              <div className="p-4 bg-[#0971CE] h-fit text-white rounded-lg shrink-0">
                 <IconComponent size={24} />
               </div>
               <div>
@@ -576,18 +566,21 @@ const Home = () => {
       </section>
 
       {/* certificates  */}
-      <section className="w-full relative bg-white py-8 sm:py-10 px-4 sm:px-6 md:px-12">
+      <section className="w-full relative bg-white py-8  px-4 sm:px-6 md:px-12">
         {/* Heading */}
         <h2 className="font-bold  relative text-3xl sm:text-4xl md:text-5xl mb-5 sm:mb-16 text-center text-gray-900">
           Our Certificates
-          <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 sm:w-20 md:w-24 h-1 bg-blue-600 font-teko rounded-full"></span>
+          <span className="absolute mt-2 -bottom-2 left-1/2 -translate-x-1/2 w-16 sm:w-20 md:w-24 h-1 bg-blue-600 font-teko rounded-full"></span>
         </h2>
 
         <div className="grid md:grid-cols-5 grid-cols-2 gap-5">
           {cirtificate.map((src, index) => (
             // <SwiperSlide key={index}>
             // <div className="flex justify-center">
-            <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md">
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:border-yellow-400 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md"
+            >
               <div className="relative w-full h-64">
                 <Image
                   src={src}
@@ -618,7 +611,7 @@ const Home = () => {
           />
         </div>
         <div className="lg:w-1/2">
-          <p className="text-sm text-center">
+          <p className="text-base text-center">
             A Trusted Manufacturer of Sharp Containers & Needle Destroyers
           </p>
           <h1 className=" py-2 font-bold text-2xl md:text-4xl font-teko ">
@@ -661,8 +654,8 @@ const Home = () => {
       </section>
 
       {/* product section  */}
-      <section className="py-5 px-2 md:px-10 lg:px-20 ">
-        <p className="font-bold text-center  text-2xl md:text-5xl capitalize my-5 font-teko">
+      <section className="py-2 px-2 md:px-10 lg:px-20 ">
+        <p className="font-bold text-center  text-3xl md:text-5xl capitalize my-5 font-teko">
           Our other Products
         </p>
         {/* <p className="font-medium text-lg text-center pb-2">
@@ -678,13 +671,14 @@ const Home = () => {
           hygiene, and regulatory compliance in healthcare environments.
         </p> */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  mt-6">
-          {otherproduct.map(({ id, image, title, desc,link }) => (
-            <Link href={link}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8  mt-6">
+          {otherproduct.map(({ id, image, title, desc, link }) => (
+            <Link
+              href={link}
               className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden justify-center"
               key={id}
             >
-              <div className="relative h-85  w-full  overflow-hidden">
+              <div className="relative h-110  w-full  overflow-hidden">
                 <Image
                   src={image}
                   alt={title}
@@ -708,12 +702,12 @@ const Home = () => {
       </section>
 
       {/* testimonial  */}
-      <section className="py-10 mt-10 px-2 md:px-10 lg:px-20">
+      <section className="py-10 md:mt-10 px-2 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl md:text-4xl font-bold text-center mb-2 font-teko">
-            Trusted Solutions, Satisfied Clients
+          <h3 className="text-4xl md:text-4xl font-bold text-center mb-2 font-teko">
+            Trusted Solutions,   <br className="md:hidden" /> Satisfied Clients
           </h3>
-          <p className="text-center text-gray-600 mb-8">
+          <p className="text-center px-5 md:px-0 text-gray-600 mb-5 md:mb-8">
             Hear from healthcare professionals and institutions using our
             products.
           </p>
@@ -726,7 +720,7 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition"
+                className="bg-white p-4 md:p-6 rounded-xl shadow-sm hover:shadow-lg transition"
                 role="article"
                 aria-label={`Testimonial from ${author}`}
               >
@@ -743,8 +737,8 @@ const Home = () => {
       </section>
 
       {/* faq section  */}
-      <section className="py-10 mt-8 px-2 md:px-10 lg:px-20">
-        <h3 className="text-2xl md:text-4xl font-bold text-center mb-2 font-teko">
+      <section className="py-3  px-2 md:px-10 lg:px-20">
+        <h3 className="text-3xl  md:text-4xl font-bold text-center mb-2 font-teko">
           Frequently Asked Questions (FAQs)
         </h3>
         <p className="text-center text-gray-600 mb-8">
@@ -792,11 +786,11 @@ const Home = () => {
       </section>
 
       {/* query form  */}
-      <section className="py-10 mt-8 bg-gray-50">
-        <h3 className="text-2xl md:text-4xl font-bold text-black mb-2 text-center font-teko">
+      <section className="py-8 mt-8 bg-gray-50">
+        <h3 className="text-3xl px-4 md:text-4xl font-bold text-black mb-2 text-center font-teko">
           Request a Quote or Product Catalog Today!
         </h3>
-        <p className="text-gray-900 mb-6 text-center">
+        <p className="text-gray-900 px-4 md:px-0 mb-6 md:text-lg text-center">
           Fill out the form below and our team will get back to you shortly
         </p>
         <div className="flex flex-col md:flex-row gap-8 md:items-center px-2 md:px-10 lg:px-20">
@@ -960,7 +954,7 @@ const Home = () => {
 
       {/* <Loactions /> */}
 
-         <PopForm open={open} setOpen={setOpen} />
+      <PopForm open={open} setOpen={setOpen} />
     </div>
   );
 };

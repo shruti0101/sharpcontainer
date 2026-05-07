@@ -49,7 +49,7 @@ const About = () => {
     <div>
       {/* who we work with section*/}
 
-      <section className="relative bg-gradient-to-b from-[#f8fafc] to-white py-15  px-4 sm:px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-[#f8fafc] to-white py-4 md:py-8  px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
           {/* LEFT */}
           <div>
@@ -57,7 +57,7 @@ const About = () => {
               OUR PROCUREMENT PARTNERS
             </span>
 
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0B2545] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B2545] leading-tight mb-5">
               Trusted by Institutional Buyers & Healthcare Procurement Teams
             </h2>
 
@@ -72,13 +72,13 @@ const About = () => {
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="group flex items-start gap-4 p-4 rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                  className="group flex flex-col md:flex-row items-center justify-center md:items-start gap-4 p-4 rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-sky-50 border border-sky-100">
+                  <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-sky-50 border p-2 border-sky-100">
                     <partner.icon className="w-5 h-5 text-sky-700" />
                   </div>
 
-                  <p className="text-sm sm:text-base font-medium text-gray-800 leading-snug">
+                  <p className="text-sm sm:text-base text-center md:text-start font-medium text-gray-800 leading-snug">
                     {partner.title}
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const About = () => {
             {/* CTA */}
             <button
               onClick={() => setOpen((prev) => !prev)}
-              className="mt-10 inline-flex items-center gap-2 px-7 py-3 text-base font-semibold text-white bg-[#0B2545] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="md:mt-10 mt-5 inline-flex items-center gap-2 px-7 py-3 text-base font-semibold text-white bg-[#0B2545] rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Become a Bulk Procurement Partner
               <span className="text-lg">→</span>

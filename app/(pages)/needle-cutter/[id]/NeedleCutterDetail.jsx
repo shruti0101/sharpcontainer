@@ -32,7 +32,7 @@ const NeedleCutterDetail = ({ productId }) => {
           return (
             <h2
               key={index}
-              className="text-2xl md:text-3xl font-bold text-blue-700 mt-10 mb-4 border-b pb-2"
+              className="text-2xl md:text-3xl font-bold text-blue-700  md:mb-4 border-b pb-2"
             >
               {part.text}
             </h2>
@@ -125,7 +125,7 @@ const NeedleCutterDetail = ({ productId }) => {
         </div>
 
         {/* Description Section */}
-        <div className="mt-8 md:mt-14 bg-white p-4 sm:p-6 md:p-10 rounded-2xl shadow-md">
+        <div className="mt-4 md:mt-14 bg-white p-4 sm:p-6 md:p-10 rounded-2xl shadow-md">
           {renderDescription(description)}
         </div>
       </div>
