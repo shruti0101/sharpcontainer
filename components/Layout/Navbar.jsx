@@ -146,7 +146,7 @@ const Navbar = () => {
               />
               <button
               onClick={translateToHindi}
-              className=" text-white font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-3 py-1 rounded-md"
+              className=" text-white text-sm font-semibold top-27 right-5 bg-red-500 hover:bg-red-600 px-2 h-10 my-auto rounded-md"
             >
               हिंदी में देखें
             </button>
