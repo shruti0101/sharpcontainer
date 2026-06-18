@@ -953,7 +953,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <Loactions /> */}
+      <Loactions />
 
       <PopForm open={open} setOpen={setOpen} />
     </div>
