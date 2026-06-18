@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { category } from "@/productData";
 import { ChevronRight } from "lucide-react";
+import { serviceLocations } from "@/data";
 
 const Sitemap = () => {
   const pages = [
@@ -93,6 +94,28 @@ const Sitemap = () => {
             </div>
           </div>
         </div>
+
+         <div className="mt-5">
+          <h2 className="text-lg font-semibold text-gray-700 mb-6">
+            City Services
+          </h2>
+
+          <div className="space-y-2">
+              <div className="grid md:grid-cols-4 space-y-2">
+                {serviceLocations.map((city) => (
+                  <Link
+                    key={city.label}
+                    href={city.href}
+                    className="flex items-center gap-2 text-sm text-gray-600 hover:text-red-600 transition"
+                  >
+                    <ChevronRight className="w-3 h-3 text-gray-400" />
+                    Sharp Container Manufacturer in {city.label}
+                  </Link>
+                ))}
+              </div>
+          </div>
+
+          </div>
       </div>
     </div>
   );
